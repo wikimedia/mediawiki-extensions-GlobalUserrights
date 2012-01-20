@@ -492,6 +492,18 @@ $messages['mt'] = array(
 	'right-userrights-global' => 'Amministra d-drittijiet globali tal-utent',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Laaknor
+ */
+$messages['nb'] = array(
+	'globaluserrights' => 'Håndtering av globale brukerrettigheter',
+	'gur-desc' => 'Enkel administrasjon av [[Special:GlobalUserRights|globale brukerrettigheter]]',
+	'gur-rightslog-name' => 'Logg for globale rettigheter',
+	'gur-rightslog-header' => 'Dette er en logg over endringer i globale brukerrettigheter',
+	'gur-rightslog-entry' => 'endret globale gruppemedlemsskap for $1 fra $2 til $3',
+	'right-userrights-global' => 'Administrer globale brukerrettigheter',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -514,18 +526,6 @@ $messages['nn'] = array(
 	'gur-rightslog-header' => 'Dette er ein logg over endringar i globale brukarrettar.',
 	'gur-rightslog-entry' => 'endra globalt gruppemedlemskap for $1 frå $2 til $3',
 	'right-userrights-global' => 'Handsama globale brukarrettar',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Laaknor
- */
-$messages['nb'] = array(
-	'globaluserrights' => 'Håndtering av globale brukerrettigheter',
-	'gur-desc' => 'Enkel administrasjon av [[Special:GlobalUserRights|globale brukerrettigheter]]',
-	'gur-rightslog-name' => 'Logg for globale rettigheter',
-	'gur-rightslog-header' => 'Dette er en logg over endringer i globale brukerrettigheter',
-	'gur-rightslog-entry' => 'endret globale gruppemedlemsskap for $1 fra $2 til $3',
-	'right-userrights-global' => 'Administrer globale brukerrettigheter',
 );
 
 /** Occitan (Occitan)
@@ -646,11 +646,12 @@ $messages['sk'] = array(
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author Rancher
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'globaluserrights' => 'Управљање глобалним правима корисника',
-	'gur-rightslog-name' => 'Историја глобалних прва',
+	'gur-rightslog-name' => 'Историја глобалних права',
 	'gur-rightslog-header' => 'Ово је историја промена глобалних права.',
 	'right-userrights-global' => 'Управљање глобалним правима корисника',
 );
