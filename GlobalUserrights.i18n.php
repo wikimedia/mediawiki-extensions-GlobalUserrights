@@ -233,11 +233,15 @@ $messages['es'] = array(
 /** Estonian (Eesti)
  * @author KalmerE.
  * @author Ker
+ * @author Pikne
  */
 $messages['et'] = array(
 	'globaluserrights' => 'Kasutaja globaal õiguste haldamine',
 	'gur-desc' => 'Lihtne [[Special:GlobalUserRights|globaalkasutaja õiguste]] haldamine',
 	'gur-rightslog-name' => 'Globaal õiguste logiraamat',
+	'gur-rightslog-header' => 'See on globaalsete õiguste muutmise logi.',
+	'gur-rightslog-entry' => 'andis kasutajale $1 järgmised globaalsed õigused: $3; seni oli ta $2',
+	'right-userrights-global' => 'Hallata globaalseid kasutajaõigusi',
 );
 
 /** Persian (فارسی)
