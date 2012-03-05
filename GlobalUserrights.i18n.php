@@ -246,10 +246,14 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'globaluserrights' => 'مدیریت اختیارات جهانی کاربر',
+	'gur-desc' => 'مدیریت آسان [[Special:GlobalUserRights|دسترسی‌های سراسری کاربری]]',
 	'gur-rightslog-name' => 'سیاههٔ اختیارات سراسری',
+	'gur-rightslog-header' => 'این سیاهه‌ای از تغییرات دسترسی‌های سراسری است.',
+	'gur-rightslog-entry' => 'عضویت در گروه سراسری برای $1 را از $2 به $3 تغییر داد',
 	'right-userrights-global' => 'مدیریت اختیارات جهانی کاربر',
 );
 
