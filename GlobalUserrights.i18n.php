@@ -78,6 +78,18 @@ $messages['arz'] = array(
 	'right-userrights-global' => 'إدارة سجل الحقوق العامه',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'globaluserrights' => "Xestión de permisos globales d'usuariu",
+	'gur-desc' => "Xestión cenciella de los [[Special:GlobalUserRights|permisos d'usuariu globales]]",
+	'gur-rightslog-name' => 'Rexistru de permisos globales',
+	'gur-rightslog-header' => 'Esti ye un rexistru de los cambios de los permisos globales.',
+	'gur-rightslog-entry' => 'camudó la pertenencia de grupu global pa $1 de $2 a $3',
+	'right-userrights-global' => "Xestionar los permisos d'usuariu globales",
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  */
@@ -745,13 +757,14 @@ $messages['vi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Wmr89502270
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'globaluserrights' => '全域用户权限管理',
 	'gur-desc' => '简单的[[Special:GlobalUserRights|全域用户权限]]管理信息',
 	'gur-rightslog-name' => '全域权限历史记录',
 	'gur-rightslog-header' => '这是改变全域用户权限的历史记录',
-	'gur-rightslog-entry' => '为$1改变全域用户组权限自$2到$3',
+	'gur-rightslog-entry' => '更改$1的全局用户组自$2至$3',
 	'right-userrights-global' => '管理全域用户权限',
 );
 
