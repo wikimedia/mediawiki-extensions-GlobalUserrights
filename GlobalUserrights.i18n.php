@@ -423,6 +423,7 @@ $messages['it'] = array(
  * @author Aotake
  * @author Fievarsty
  * @author Fryed-peach
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'globaluserrights' => 'グローバル利用者権限管理',
@@ -430,7 +431,7 @@ $messages['ja'] = array(
 	'gur-rightslog-name' => 'グローバル権限変更記録',
 	'gur-rightslog-header' => 'これはグローバル権限の変更記録です。',
 	'gur-rightslog-entry' => '$1 のグローバルグループ所属を$2から$3へ変更しました',
-	'right-userrights-global' => 'グローバル利用者権限を管理する',
+	'right-userrights-global' => 'グローバル利用者権限を管理',
 );
 
 /** Khmer (ភាសាខ្មែរ)
