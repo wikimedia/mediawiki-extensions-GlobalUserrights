@@ -667,22 +667,24 @@ $messages['sk'] = array(
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author FriedrickMILBarbarossa
  * @author Rancher
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'globaluserrights' => 'Управљање глобалним правима корисника',
-	'gur-rightslog-name' => 'Историја глобалних права',
+	'gur-rightslog-name' => 'Дневник глобалних права',
 	'gur-rightslog-header' => 'Ово је историја промена глобалних права.',
 	'right-userrights-global' => 'Управљање глобалним правима корисника',
 );
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
+ * @author FriedrickMILBarbarossa
  * @author Michaello
  */
 $messages['sr-el'] = array(
 	'globaluserrights' => 'Upravljanje globalnim pravima korisnika',
-	'gur-rightslog-name' => 'Istorija globalnih prva',
+	'gur-rightslog-name' => 'Dnevnik globalnih prva',
 	'gur-rightslog-header' => 'Ovo je istorija promena globalnih prava.',
 	'right-userrights-global' => 'Upravljanje globalnim pravima korisnika',
 );
