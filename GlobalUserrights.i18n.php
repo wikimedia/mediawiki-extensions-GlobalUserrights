@@ -298,9 +298,9 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'globaluserrights' => 'Administracion des drêts d’utilisator globâls',
+	'globaluserrights' => 'Administracion des drêts d’usanciér globâls',
 	'gur-rightslog-name' => 'Jornal des drêts globâls',
-	'right-userrights-global' => 'Administrar los drêts d’utilisator globâls',
+	'right-userrights-global' => 'Administrar los drêts d’usanciér globâls',
 );
 
 /** Galician (Galego)
@@ -539,6 +539,7 @@ $messages['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'globaluserrights' => 'Handsaming av globale brukarrettar',
