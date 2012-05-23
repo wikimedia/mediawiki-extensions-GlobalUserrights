@@ -23,6 +23,11 @@ $specialPageAliases['arz'] = array(
 	'GlobalUserrights' => array( 'حقوق_اليوزر_العالميه' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'GlobalUserrights' => array( 'Kaanggutaan_galambang_global' ),
+);
+
 /** Bosnian (Bosanski) */
 $specialPageAliases['bs'] = array(
 	'GlobalUserrights' => array( 'PravaGlobalnihKorisnika', 'ClanstvoGlobalnihGrupa' ),
