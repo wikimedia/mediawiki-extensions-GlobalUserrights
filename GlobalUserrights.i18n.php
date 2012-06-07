@@ -759,6 +759,13 @@ $messages['vi'] = array(
 	'right-userrights-global' => 'Quản lý quyền thành viên toàn cục',
 );
 
+/** Walloon (walon)
+ * @author Srtxg
+ */
+$messages['wa'] = array(
+	'gur-rightslog-entry' => "a candjî l' apårtinance totavå di l' uzeu «$1» di «$2» viè «$3»",
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Wmr89502270
  * @author Xiaomingyan
