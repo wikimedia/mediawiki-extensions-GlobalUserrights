@@ -28,7 +28,7 @@ $specialPageAliases['bjn'] = array(
 	'GlobalUserrights' => array( 'Kaanggutaan_galambang_global' ),
 );
 
-/** Bosnian (Bosanski) */
+/** Bosnian (bosanski) */
 $specialPageAliases['bs'] = array(
 	'GlobalUserrights' => array( 'PravaGlobalnihKorisnika', 'ClanstvoGlobalnihGrupa' ),
 );
@@ -38,12 +38,17 @@ $specialPageAliases['de'] = array(
 	'GlobalUserrights' => array( 'Globale_Benutzerrechte' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'GlobalUserrights' => array( 'GlobalHeqaKarberan' ),
+);
+
 /** Lower Sorbian (Dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'GlobalUserrights' => array( 'Globalne_wužywarske_pšawa' ),
 );
 
-/** Spanish (Español) */
+/** Spanish (español) */
 $specialPageAliases['es'] = array(
 	'GlobalUserrights' => array( 'Permisos_de_usuarios_globales', 'Permisos_usuarios_globales', 'Derechos_usuarios_globales' ),
 );
@@ -53,12 +58,12 @@ $specialPageAliases['fa'] = array(
 	'GlobalUserrights' => array( 'دسترسی_سراسری' ),
 );
 
-/** French (Français) */
+/** French (français) */
 $specialPageAliases['fr'] = array(
 	'GlobalUserrights' => array( 'Droits_des_utilisateurs_globaux', 'DroitsDesUtilisateursGlobaux' ),
 );
 
-/** Franco-Provençal (Arpetan) */
+/** Franco-Provençal (arpetan) */
 $specialPageAliases['frp'] = array(
 	'GlobalUserrights' => array( 'Drêts_ux_usanciérs_globâls', 'DrêtsUxUsanciérsGlobâls' ),
 );
@@ -73,7 +78,7 @@ $specialPageAliases['gu'] = array(
 	'GlobalUserrights' => array( 'વૈશ્વીકસભ્ય_હક્કો' ),
 );
 
-/** Croatian (Hrvatski) */
+/** Croatian (hrvatski) */
 $specialPageAliases['hr'] = array(
 	'GlobalUserrights' => array( 'Globalna_prava', 'Globalno_članstvo_grupe' ),
 );
@@ -88,7 +93,7 @@ $specialPageAliases['ht'] = array(
 	'GlobalUserrights' => array( 'DwaItilizatèGlobal2', 'FèPatiGwoupGlobal2' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'GlobalUserrights' => array( 'Derectos_global_de_usatores' ),
 );
@@ -98,7 +103,7 @@ $specialPageAliases['id'] = array(
 	'GlobalUserrights' => array( 'Keanggotaan_grup_global', 'KeanggotaanGrupGlobal' ),
 );
 
-/** Italian (Italiano) */
+/** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'GlobalUserrights' => array( 'DirittiUtenteGlobale' ),
 );
@@ -133,7 +138,7 @@ $specialPageAliases['lb'] = array(
 	'GlobalUserrights' => array( 'Global_Benotzerrechter' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'GlobalUserrights' => array( 'ГлобалниКорисничкиПрава' ),
 );
@@ -148,7 +153,7 @@ $specialPageAliases['mr'] = array(
 	'GlobalUserrights' => array( 'वैश्विकसदस्यअधिकार' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'GlobalUserrights' => array( 'Globale_brukerrettigheter2' ),
 );
@@ -163,27 +168,27 @@ $specialPageAliases['nl'] = array(
 	'GlobalUserrights' => array( 'GlobaleGebruikersrechten' ),
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
 $specialPageAliases['nn'] = array(
 	'GlobalUserrights' => array( 'Brukarrettar_globalt' ),
 );
 
-/** Occitan (Occitan) */
+/** Occitan (occitan) */
 $specialPageAliases['oc'] = array(
 	'GlobalUserrights' => array( 'Dreches_dels_utilizaires_globals', 'DrechesDelsUtilizairesGlobals' ),
 );
 
-/** Polish (Polski) */
+/** Polish (polski) */
 $specialPageAliases['pl'] = array(
 	'GlobalUserrights' => array( 'Globalne_uprawnienia_użytkownika' ),
 );
 
-/** Portuguese (Português) */
+/** Portuguese (português) */
 $specialPageAliases['pt'] = array(
 	'GlobalUserrights' => array( 'Privilégios_globais_de_utilizador' ),
 );
 
-/** Romanian (Română) */
+/** Romanian (română) */
 $specialPageAliases['ro'] = array(
 	'GlobalUserrights' => array( 'Drepturiglobaleutilizator' ),
 );
@@ -193,7 +198,7 @@ $specialPageAliases['sa'] = array(
 	'GlobalUserrights' => array( 'वैश्विकयोजकाधिकार' ),
 );
 
-/** Slovak (Slovenčina) */
+/** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'GlobalUserrights' => array( 'GlobálnePoužívateľskéPráva' ),
 );
@@ -208,7 +213,7 @@ $specialPageAliases['tr'] = array(
 	'GlobalUserrights' => array( 'KüreselKullanıcıHakları' ),
 );
 
-/** Tatar (Cyrillic script) (Татарча) */
+/** Tatar (Cyrillic script) (татарча) */
 $specialPageAliases['tt-cyrl'] = array(
 	'GlobalUserrights' => array( 'Кулланучыларның_глобаль_хокуклары' ),
 );
@@ -218,12 +223,12 @@ $specialPageAliases['yue'] = array(
 	'GlobalUserrights' => array( '全域用戶權' ),
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文（简体）‬) */
 $specialPageAliases['zh-hans'] = array(
 	'GlobalUserrights' => array( '全域用户权限' ),
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $specialPageAliases['zh-hant'] = array(
 	'GlobalUserrights' => array( '全域用戶組權限' ),
 );
