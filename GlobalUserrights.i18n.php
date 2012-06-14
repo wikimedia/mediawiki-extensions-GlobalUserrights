@@ -78,7 +78,7 @@ $messages['arz'] = array(
 	'right-userrights-global' => 'إدارة سجل الحقوق العامه',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -127,7 +127,7 @@ $messages['be-tarask'] = array(
 	'right-userrights-global' => 'кіраваньне глябальнымі правамі ўдзельнікаў',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -149,7 +149,7 @@ $messages['bn'] = array(
 	'right-userrights-global' => 'গ্লোবাল অধিকার ব্যবস্থাপনা',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -161,7 +161,7 @@ $messages['br'] = array(
 	'right-userrights-global' => 'Merañ ar gwirioù implijer hollek',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -173,7 +173,7 @@ $messages['bs'] = array(
 	'right-userrights-global' => 'Upravljanje pravima globalnih korisnika',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author SMP
  */
 $messages['ca'] = array(
@@ -228,7 +228,7 @@ $messages['eo'] = array(
 	'right-userrights-global' => 'Administri ĝeneralajn uzulajn rajtojn',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Baiji
  * @author Crazymadlover
  * @author Dferg
@@ -242,7 +242,7 @@ $messages['es'] = array(
 	'right-userrights-global' => 'Administrar derechos de usuario global',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author KalmerE.
  * @author Ker
  * @author Pikne
@@ -269,7 +269,7 @@ $messages['fa'] = array(
 	'right-userrights-global' => 'مدیریت اختیارات جهانی کاربر',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Jack Phoenix
  */
@@ -282,7 +282,7 @@ $messages['fi'] = array(
 	'right-userrights-global' => 'Hallita järjestelmänlaajuisia käyttöoikeuksia',
 );
 
-/** French (Français)
+/** French (français)
  * @author IAlex
  */
 $messages['fr'] = array(
@@ -294,7 +294,7 @@ $messages['fr'] = array(
 	'right-userrights-global' => 'Gérer les droits utilisateurs globaux',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -351,7 +351,7 @@ $messages['hsb'] = array(
 	'right-userrights-global' => 'Globalne wužiwarske prawa zrjadować',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
@@ -363,7 +363,7 @@ $messages['hu'] = array(
 	'right-userrights-global' => 'Globális szerkesztői jogosultságok kezelése',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -399,7 +399,7 @@ $messages['ilo'] = array(
 	'right-userrights-global' => 'Taripatuen dagiti sangalubongan a karbengan ti agar-aramat',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author Snævar
  */
 $messages['is'] = array(
@@ -407,7 +407,7 @@ $messages['is'] = array(
 	'gur-rightslog-header' => 'Þetta er skrá yfir breytingar á altækum réttindum notenda.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Pietrodn
  */
 $messages['it'] = array(
@@ -488,7 +488,7 @@ $messages['lb'] = array(
 	'right-userrights-global' => 'Global Benotzerrechter geréieren',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -537,7 +537,7 @@ $messages['nl'] = array(
 	'right-userrights-global' => 'Globale gebruikersrechten beheren',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -550,7 +550,7 @@ $messages['nn'] = array(
 	'right-userrights-global' => 'Handsama globale brukarrettar',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -569,7 +569,7 @@ $messages['or'] = array(
 	'gur-rightslog-entry' => '$1 ପାଇଁ ଗୋଠ ବିଶ୍ଵ ସଭ୍ୟ ପଦର ଅବସ୍ଥା $2 ରୁ $3କୁ ବଦଳାଇଦିଆଗଲା',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Leinad
  */
 $messages['pl'] = array(
@@ -593,7 +593,7 @@ $messages['pms'] = array(
 	'right-userrights-global' => "Gestiss ij drit globaj ëd j'utent",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Malafaya
  */
 $messages['pt'] = array(
@@ -605,7 +605,7 @@ $messages['pt'] = array(
 	'right-userrights-global' => 'Gerir permissões de utilizadores globais',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
@@ -617,7 +617,7 @@ $messages['pt-br'] = array(
 	'right-userrights-global' => 'Gerenciar permissões de utilizadores globais',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Minisarm
  * @author Misterr
@@ -631,7 +631,7 @@ $messages['ro'] = array(
 	'right-userrights-global' => 'Administrează drepturile globale ale utilizatorilor',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -643,7 +643,7 @@ $messages['roa-tara'] = array(
 	'right-userrights-global' => "Gestisce le deritte de l'utinde globale",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  */
 $messages['ru'] = array(
@@ -655,7 +655,7 @@ $messages['ru'] = array(
 	'right-userrights-global' => 'управление глобальными правами участников',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -667,7 +667,7 @@ $messages['sk'] = array(
 	'right-userrights-global' => 'Spravovať oprávnenia globálnych používateľov',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author FriedrickMILBarbarossa
  * @author Rancher
  * @author Михајло Анђелковић
@@ -679,7 +679,7 @@ $messages['sr-ec'] = array(
 	'right-userrights-global' => 'Управљање глобалним правима корисника',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author FriedrickMILBarbarossa
  * @author Michaello
  */
@@ -690,7 +690,7 @@ $messages['sr-el'] = array(
 	'right-userrights-global' => 'Upravljanje globalnim pravima korisnika',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Gabbe.g
  */
 $messages['sv'] = array(
@@ -736,7 +736,7 @@ $messages['tr'] = array(
 	'right-userrights-global' => 'Küresel kullanıcı haklarını yönetir',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Vajotwo
  */
 $messages['vec'] = array(
@@ -766,7 +766,7 @@ $messages['wa'] = array(
 	'gur-rightslog-entry' => "a candjî l' apårtinance totavå di l' uzeu «$1» di «$2» viè «$3»",
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Wmr89502270
  * @author Xiaomingyan
  */
@@ -779,7 +779,7 @@ $messages['zh-hans'] = array(
 	'right-userrights-global' => '管理全域用户权限',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Liangent
  * @author Mark85296341
  */
