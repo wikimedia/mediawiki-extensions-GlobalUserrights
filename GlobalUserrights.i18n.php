@@ -767,6 +767,7 @@ $messages['wa'] = array(
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
+ * @author Bencmq
  * @author Wmr89502270
  * @author Xiaomingyan
  */
@@ -775,7 +776,7 @@ $messages['zh-hans'] = array(
 	'gur-desc' => '简单的[[Special:GlobalUserRights|全域用户权限]]管理信息',
 	'gur-rightslog-name' => '全域权限历史记录',
 	'gur-rightslog-header' => '这是改变全域用户权限的历史记录',
-	'gur-rightslog-entry' => '更改$1的全局用户组自$2至$3',
+	'gur-rightslog-entry' => '将$1的全局用户组由$2更改为$3',
 	'right-userrights-global' => '管理全域用户权限',
 );
 
