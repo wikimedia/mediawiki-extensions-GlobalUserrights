@@ -43,7 +43,7 @@ $specialPageAliases['diq'] = array(
 	'GlobalUserrights' => array( 'GlobalHeqaKarberan' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'GlobalUserrights' => array( 'Globalne_wužywarske_pšawa' ),
 );
@@ -68,7 +68,7 @@ $specialPageAliases['frp'] = array(
 	'GlobalUserrights' => array( 'Drêts_ux_usanciérs_globâls', 'DrêtsUxUsanciérsGlobâls' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'GlobalUserrights' => array( 'Dereitos_de_usuario_globais' ),
 );
@@ -83,7 +83,7 @@ $specialPageAliases['hr'] = array(
 	'GlobalUserrights' => array( 'Globalna_prava', 'Globalno_članstvo_grupe' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'GlobalUserrights' => array( 'Globalne_wužwiarske_prawa' ),
 );
