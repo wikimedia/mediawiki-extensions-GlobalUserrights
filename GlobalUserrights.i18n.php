@@ -114,7 +114,7 @@ $messages['bar'] = array(
 	'right-userrights-global' => 'Globale Benutzrechte vawåitn',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -197,7 +197,7 @@ $messages['de'] = array(
 	'right-userrights-global' => 'Globale Benutzerrechte verwalten',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -303,7 +303,7 @@ $messages['frp'] = array(
 	'right-userrights-global' => 'Administrar los drêts d’usanciér globâls',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -339,7 +339,7 @@ $messages['he'] = array(
 	'right-userrights-global' => 'ניהול הרשאות גלובליות',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(

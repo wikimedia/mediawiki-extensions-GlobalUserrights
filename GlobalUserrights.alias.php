@@ -188,6 +188,11 @@ $specialPageAliases['pt'] = array(
 	'GlobalUserrights' => array( 'Privilégios_globais_de_utilizador' ),
 );
 
+/** Brazilian Portuguese (português do Brasil) */
+$specialPageAliases['pt-br'] = array(
+	'GlobalUserrights' => array( 'Privilégios_globais_de_usuário' ),
+);
+
 /** Romanian (română) */
 $specialPageAliases['ro'] = array(
 	'GlobalUserrights' => array( 'Drepturiglobaleutilizator' ),
