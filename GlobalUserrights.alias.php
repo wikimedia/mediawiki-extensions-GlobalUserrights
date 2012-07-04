@@ -75,7 +75,7 @@ $specialPageAliases['gl'] = array(
 
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
-	'GlobalUserrights' => array( 'વૈશ્વીકસભ્ય_હક્કો' ),
+	'GlobalUserrights' => array( 'વૈશ્વિકસભ્ય_હક્કો', 'વૈશ્વિકસમૂહસભ્યપદ' ),
 );
 
 /** Croatian (hrvatski) */
