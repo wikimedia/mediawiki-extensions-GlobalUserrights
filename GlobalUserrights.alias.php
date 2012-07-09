@@ -210,7 +210,7 @@ $specialPageAliases['sk'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'GlobalUserrights' => array( 'Mga karapatan ng pandaigdigang tagagamit' ),
+	'GlobalUserrights' => array( 'Mga_karapatan_ng_pangglobong_tagagamit' ),
 );
 
 /** Turkish (Türkçe) */
