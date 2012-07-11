@@ -90,7 +90,7 @@ $messages['ast'] = array(
 	'right-userrights-global' => "Xestionar los permisos d'usuariu globales",
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -453,7 +453,7 @@ $messages['ko'] = array(
 	'globaluserrights' => '공통 계정 권한 관리',
 	'gur-desc' => '쉬운 [[Special:GlobalUserRights|공통 계정 권한 관리]]',
 	'gur-rightslog-name' => '공통 권한 기록',
-	'gur-rightslog-header' => '공통 권한 변경 기록입니다.',
+	'gur-rightslog-header' => '공통 권한 바꾸기 기록입니다.',
 	'gur-rightslog-entry' => '$1의 공통 권한을 $2에서 $3으로 바꿈',
 	'right-userrights-global' => '공통 권한 관리하기',
 );
@@ -514,7 +514,7 @@ $messages['mt'] = array(
 	'right-userrights-global' => 'Amministra d-drittijiet globali tal-utent',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Laaknor
  */
 $messages['nb'] = array(
