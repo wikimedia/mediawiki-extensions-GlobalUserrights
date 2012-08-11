@@ -703,6 +703,13 @@ $messages['sv'] = array(
 	'right-userrights-global' => 'Administrera globala användarrättigheter',
 );
 
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'gur-rightslog-name' => 'உலககளவிய உரிமைகள் பதிகை',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
