@@ -705,9 +705,12 @@ $messages['sv'] = array(
 
 /** Tamil (தமிழ்)
  * @author Shanmugamp7
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
+	'globaluserrights' => 'உலகப் பயனர் உரிமைகள் முகாமைத்துவம்',
 	'gur-rightslog-name' => 'உலககளவிய உரிமைகள் பதிகை',
+	'right-userrights-global' => 'உலகப் பயனர் உரிமைகளை முகாமிக்கவும்',
 );
 
 /** Telugu (తెలుగు)
