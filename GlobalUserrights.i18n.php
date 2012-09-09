@@ -347,7 +347,7 @@ $messages['hsb'] = array(
 	'gur-desc' => 'Lochke zrjadowanje [[Special:GlobalUserRights|globalnych wužiwarskich prawow]]',
 	'gur-rightslog-name' => 'Protokol globalnych prawow',
 	'gur-rightslog-header' => 'To je protokol wo změnach globalnych prawow.',
-	'gur-rightslog-entry' => 'změni globalne skupniske čłonstwo za $1 z $2 do $3',
+	'gur-rightslog-entry' => 'změni globalne skupinske čłonstwo za $1 z $2 do $3',
 	'right-userrights-global' => 'Globalne wužiwarske prawa zrjadować',
 );
 
