@@ -153,7 +153,7 @@ $specialPageAliases['mr'] = array(
 	'GlobalUserrights' => array( 'वैश्विकसदस्यअधिकार' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'GlobalUserrights' => array( 'Globale_brukerrettigheter2' ),
 );
@@ -168,7 +168,7 @@ $specialPageAliases['nl'] = array(
 	'GlobalUserrights' => array( 'GlobaleGebruikersrechten' ),
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (norsk (nynorsk)‎) */
 $specialPageAliases['nn'] = array(
 	'GlobalUserrights' => array( 'Brukarrettar_globalt' ),
 );
@@ -228,12 +228,12 @@ $specialPageAliases['yue'] = array(
 	'GlobalUserrights' => array( '全域用戶權' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'GlobalUserrights' => array( '全域用户权限' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'GlobalUserrights' => array( '全域用戶組權限' ),
 );
