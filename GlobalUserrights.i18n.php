@@ -279,7 +279,7 @@ $messages['fi'] = array(
 	'gur-rightslog-name' => 'Järjestelmänlaajuinen käyttöoikeusloki',
 	'gur-rightslog-header' => 'Tämä on loki käyttäjien järjestelmänlaajuisten käyttöoikeuksien muutoksista.',
 	'gur-rightslog-entry' => 'muutti käyttäjän $1 järjestelmänlaajuisia oikeuksia ryhmistä $2 ryhmiin $3',
-	'right-userrights-global' => 'Hallita järjestelmänlaajuisia käyttöoikeuksia',
+	'right-userrights-global' => 'Hallinnoida järjestelmänlaajuisia käyttöoikeuksia',
 );
 
 /** French (français)
@@ -430,7 +430,7 @@ $messages['ja'] = array(
 	'gur-desc' => '[[Special:GlobalUserRights|グローバル利用者権限]]の簡易管理',
 	'gur-rightslog-name' => 'グローバル権限変更記録',
 	'gur-rightslog-header' => 'これはグローバル権限の変更記録です。',
-	'gur-rightslog-entry' => '$1 のグローバルグループ所属を$2から$3へ変更しました',
+	'gur-rightslog-entry' => '$1 の所属グローバルグループを $2 から $3 に変更しました',
 	'right-userrights-global' => 'グローバル利用者権限を管理',
 );
 
