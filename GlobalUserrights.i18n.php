@@ -502,6 +502,18 @@ $messages['mk'] = array(
 	'right-userrights-global' => 'Раководење со глобални кориснички права',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'globaluserrights' => 'Pengurusan Hak Pengguna Sejagat',
+	'gur-desc' => 'Pentadbiran [[Special:GlobalUserRights|hak pengguna sejagat]] yang mudah',
+	'gur-rightslog-name' => 'Log hak sejagat',
+	'gur-rightslog-header' => 'Ini ialah log perubahan terhadap hak pengguna sejagat.',
+	'gur-rightslog-entry' => 'menukar keahlian kumpulan sejagat bagi $1 daripada $2 menjadi $3',
+	'right-userrights-global' => 'Menguruskan hak pengguna sejagat',
+);
+
 /** Maltese (Malti)
  * @author Chrisportelli
  */
