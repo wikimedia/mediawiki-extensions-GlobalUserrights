@@ -114,7 +114,7 @@ $messages['bar'] = array(
 	'right-userrights-global' => 'Globale Benutzrechte vawåitn',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -470,7 +470,7 @@ $messages['ksh'] = array(
 	'right-userrights-global' => 'De jemeinsame Metmaacher_Rääschte verwallde',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -526,7 +526,7 @@ $messages['mt'] = array(
 	'right-userrights-global' => 'Amministra d-drittijiet globali tal-utent',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -550,7 +550,7 @@ $messages['nl'] = array(
 	'right-userrights-global' => 'Globale gebruikersrechten beheren',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -680,7 +680,7 @@ $messages['sk'] = array(
 	'right-userrights-global' => 'Spravovať oprávnenia globálnych používateľov',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author FriedrickMILBarbarossa
  * @author Rancher
  * @author Михајло Анђелковић
@@ -692,7 +692,7 @@ $messages['sr-ec'] = array(
 	'right-userrights-global' => 'Управљање глобалним правима корисника',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author FriedrickMILBarbarossa
  * @author Michaello
  */
@@ -789,7 +789,7 @@ $messages['wa'] = array(
 	'gur-rightslog-entry' => "a candjî l' apårtinance totavå di l' uzeu «$1» di «$2» viè «$3»",
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
  * @author Wmr89502270
  * @author Xiaomingyan
@@ -803,7 +803,7 @@ $messages['zh-hans'] = array(
 	'right-userrights-global' => '管理全域用户权限',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  * @author Mark85296341
  */
