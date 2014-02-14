@@ -5,6 +5,7 @@
  * @file
  * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
@@ -153,12 +154,12 @@ $specialPageAliases['mr'] = array(
 	'GlobalUserrights' => array( 'वैश्विकसदस्यअधिकार' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'GlobalUserrights' => array( 'Globale_brukerrettigheter2' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'GlobalUserrights' => array( 'Globle_gebrukersrechten' ),
 );
@@ -168,7 +169,7 @@ $specialPageAliases['nl'] = array(
 	'GlobalUserrights' => array( 'GlobaleGebruikersrechten' ),
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎) */
+/** Norwegian Nynorsk (norsk nynorsk) */
 $specialPageAliases['nn'] = array(
 	'GlobalUserrights' => array( 'Brukarrettar_globalt' ),
 );

@@ -759,6 +759,18 @@ $messages['tr'] = array(
 	'right-userrights-global' => 'Küresel kullanıcı haklarını yönetir',
 );
 
+/** Ukrainian (українська)
+ * @author Andriykopanytsia
+ */
+$messages['uk'] = array(
+	'globaluserrights' => 'Керування глобальними правами користувачів',
+	'gur-desc' => 'Просте адміністрування [[Special:GlobalUserRights|глобальних прав учасників]]',
+	'gur-rightslog-name' => 'Журнал глобальних прав',
+	'gur-rightslog-header' => 'Це журнал змін глобальних прав.',
+	'gur-rightslog-entry' => 'змінив глобальні права для $1 з $2 на $3',
+	'right-userrights-global' => 'Керувати глобальними правами користувача',
+);
+
 /** vèneto (vèneto)
  * @author Vajotwo
  */
@@ -815,4 +827,3 @@ $messages['zh-hant'] = array(
 	'gur-rightslog-entry' => '為 $1 改變全域用戶組權限自 $2 到 $3',
 	'right-userrights-global' => '管理全域用戶權限',
 );
-
