@@ -231,7 +231,7 @@ $specialPageAliases['yue'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'GlobalUserrights' => array( '全域用户权限' ),
+	'GlobalUserrights' => array( '全域用户权利', '全域成员组' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
