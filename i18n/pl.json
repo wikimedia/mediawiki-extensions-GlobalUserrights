@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Leinad"
+        ]
+    },
+    "globaluserrights": "Zarządzanie globalnymi uprawnieniami użytkownika",
+    "gur-desc": "Łatwe zarządzanie [[Special:GlobalUserRights|globalnymi uprawnieniami użytkownika]]",
+    "gur-rightslog-name": "Rejestr globalnych uprawnień",
+    "gur-rightslog-header": "To jest rejestr zmian globalnych uprawnień",
+    "gur-rightslog-entry": "zmienił globalną przynależność $1 do grup ($2 → $3)",
+    "right-userrights-global": "Zarządzanie globalnymi uprawnieniami użytkownika"
+}

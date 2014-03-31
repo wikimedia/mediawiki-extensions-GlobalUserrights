@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Xuacu"
+        ]
+    },
+    "globaluserrights": "Xestión de permisos globales d'usuariu",
+    "gur-desc": "Xestión cenciella de los [[Special:GlobalUserRights|permisos d'usuariu globales]]",
+    "gur-rightslog-name": "Rexistru de permisos globales",
+    "gur-rightslog-header": "Esti ye un rexistru de los cambios de los permisos globales.",
+    "gur-rightslog-entry": "camudó la pertenencia de grupu global pa $1 de $2 a $3",
+    "right-userrights-global": "Xestionar los permisos d'usuariu globales"
+}

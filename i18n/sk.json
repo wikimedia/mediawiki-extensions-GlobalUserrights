@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Helix84"
+        ]
+    },
+    "globaluserrights": "Správa oprávnení globálnych používateľov",
+    "gur-desc": "Jednoduchá správa [[Special:GlobalUserRights|oprávnení globálnych používateľov]]",
+    "gur-rightslog-name": "Záznam globálnych oprávnení",
+    "gur-rightslog-header": "Toto je záznam zmien globálnych oprávnení.",
+    "gur-rightslog-entry": "zmenené členstvo $1 v globálnej skupine z $2 na $3",
+    "right-userrights-global": "Spravovať oprávnenia globálnych používateľov"
+}

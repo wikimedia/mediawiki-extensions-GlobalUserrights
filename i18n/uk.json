@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Andriykopanytsia"
+        ]
+    },
+    "globaluserrights": "Керування глобальними правами користувачів",
+    "gur-desc": "Просте адміністрування [[Special:GlobalUserRights|глобальних прав учасників]]",
+    "gur-rightslog-name": "Журнал глобальних прав",
+    "gur-rightslog-header": "Це журнал змін глобальних прав.",
+    "gur-rightslog-entry": "змінив глобальні права для $1 з $2 на $3",
+    "right-userrights-global": "Керувати глобальними правами користувача"
+}

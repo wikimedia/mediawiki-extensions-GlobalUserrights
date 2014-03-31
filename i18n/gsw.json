@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Als-Holder"
+        ]
+    },
+    "globaluserrights": "Wältwyti Benutzerrächtverwaltig",
+    "gur-desc": "Eifachi Verwaltig vu [[Special:GlobalUserRights|wältwyte Benutzerrächt]]",
+    "gur-rightslog-name": "Wältwyt Rächt-Logbuech",
+    "gur-rightslog-header": "Des isch e Logbuech vu dr Änderige an wältwyte Benutzerrächt.",
+    "gur-rightslog-entry": "het di wältwyt Gruppezuegherigkeit fir $1 vu $2 uf $3 gänderet",
+    "right-userrights-global": "Wältwyti Benutzerrächt verwalte"
+}

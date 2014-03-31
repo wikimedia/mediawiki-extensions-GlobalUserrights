@@ -17,13 +17,14 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'GlobalUserrights',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:GlobalUserrights',
-	'version'        => '1.0.3',
+	'version'        => '1.1.0',
 	'author'         => 'Nathaniel Herman',
 	'descriptionmsg' => 'gur-desc',
 );
 
 // Set up the new special page
 $dir = dirname( __FILE__ ) . '/';
+$wgMessagesDirs['GlobalUserrights'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['GlobalUserrights'] = $dir . 'GlobalUserrights.i18n.php';
 $wgExtensionMessagesFiles['GlobalUserrightsAlias'] = $dir . 'GlobalUserrights.alias.php';
 $wgAutoloadClasses['GlobalUserrights'] = $dir . 'GlobalUserrights_body.php';
@@ -44,7 +45,7 @@ $wgLogActions['gblrights/rights'] = 'gur-rightslog-entry';
 $wgHooks['UserEffectiveGroups'][] = 'efAddGlobalUserrights';
 $wgHooks['SpecialListusersQueryInfo'][] = 'efGURUpdateQueryInfo';
 
-/** 
+/**
  * Function to get a given user's global groups
  *
  * @param $user instance of User class
@@ -75,7 +76,7 @@ function efGURgetGroups( $user ) {
 	return $groups;
 }
 
-/** 
+/**
  * Hook function for UserEffectiveGroups
  * Adds any global groups the user has to $groups
  *
@@ -89,7 +90,7 @@ function efAddGlobalUserrights( $user, &$groups ) {
 	return true;
 }
 
-/** 
+/**
  * Hook function for SpecialListusersQueryInfo
  * Updates UsersPager::getQueryInfo() to account for the global_user_groups table
  * This ensures that global rights show up on Special:Listusers

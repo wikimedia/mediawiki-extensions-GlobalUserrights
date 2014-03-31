@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Harald Khan",
+            "Njardarlogar"
+        ]
+    },
+    "globaluserrights": "Handsaming av globale brukarrettar",
+    "gur-desc": "Enkel handsaming av [[Special:GlobalUserRights|globale brukarrettar]]",
+    "gur-rightslog-name": "Logg for globale rettar",
+    "gur-rightslog-header": "Dette er ein logg over endringar i globale brukarrettar.",
+    "gur-rightslog-entry": "endra globalt gruppemedlemskap for $1 frå $2 til $3",
+    "right-userrights-global": "Handsama globale brukarrettar"
+}

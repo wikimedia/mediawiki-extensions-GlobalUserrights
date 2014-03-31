@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "FriedrickMILBarbarossa",
+            "Rancher",
+            "Михајло Анђелковић"
+        ]
+    },
+    "globaluserrights": "Управљање глобалним правима корисника",
+    "gur-rightslog-name": "Дневник глобалних права",
+    "gur-rightslog-header": "Ово је историја промена глобалних права.",
+    "right-userrights-global": "Управљање глобалним правима корисника"
+}
