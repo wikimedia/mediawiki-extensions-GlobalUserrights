@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisiPK"
-        ]
-    },
-    "globaluserrights": "Globale Benutzerrechteverwaltung",
-    "gur-desc": "Einfache Verwaltung [[Special:GlobalUserRights|globaler Benutzerrechte]]",
-    "gur-rightslog-name": "Globales Rechte-Logbuch",
-    "gur-rightslog-header": "Dies ist ein Logbuch der Änderungen an globalen Benutzerrechten.",
-    "gur-rightslog-entry": "änderte die globale Gruppenmitgliedschaft für $1 von $2 auf $3",
-    "right-userrights-global": "Globale Benutzerrechte verwalten"
+	"@metadata": {
+		"authors": [
+			"ChrisiPK"
+		]
+	},
+	"globaluserrights": "Globale Benutzerrechteverwaltung",
+	"gur-desc": "Einfache Verwaltung [[Special:GlobalUserRights|globaler Benutzerrechte]]",
+	"gur-rightslog-name": "Globales Rechte-Logbuch",
+	"gur-rightslog-header": "Dies ist ein Logbuch der Änderungen an globalen Benutzerrechten.",
+	"gur-rightslog-entry": "änderte die globale Gruppenmitgliedschaft für $1 von $2 auf $3",
+	"right-userrights-global": "Globale Benutzerrechte verwalten"
 }

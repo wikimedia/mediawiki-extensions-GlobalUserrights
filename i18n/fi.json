@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Crt",
-            "Jack Phoenix"
-        ]
-    },
-    "globaluserrights": "Järjestelmänlaajuisten käyttöoikeuksien hallinta",
-    "gur-desc": "Kätevä [[Special:GlobalUserRights|järjestelmänlaajuisten käyttöoikeuksien]] hallinta",
-    "gur-rightslog-name": "Järjestelmänlaajuinen käyttöoikeusloki",
-    "gur-rightslog-header": "Tämä on loki käyttäjien järjestelmänlaajuisten käyttöoikeuksien muutoksista.",
-    "gur-rightslog-entry": "muutti käyttäjän $1 järjestelmänlaajuisia oikeuksia ryhmistä $2 ryhmiin $3",
-    "right-userrights-global": "Hallinnoida järjestelmänlaajuisia käyttöoikeuksia"
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Jack Phoenix"
+		]
+	},
+	"globaluserrights": "Järjestelmänlaajuisten käyttöoikeuksien hallinta",
+	"gur-desc": "Kätevä [[Special:GlobalUserRights|järjestelmänlaajuisten käyttöoikeuksien]] hallinta",
+	"gur-rightslog-name": "Järjestelmänlaajuinen käyttöoikeusloki",
+	"gur-rightslog-header": "Tämä on loki käyttäjien järjestelmänlaajuisten käyttöoikeuksien muutoksista.",
+	"gur-rightslog-entry": "muutti käyttäjän $1 järjestelmänlaajuisia oikeuksia ryhmistä $2 ryhmiin $3",
+	"right-userrights-global": "Hallinnoida järjestelmänlaajuisia käyttöoikeuksia"
 }

@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "globaluserrights": "Xestión dos dereitos de usuario globais",
-    "gur-desc": "Administración sinxela dos [[Special:GlobalUserRights|dereitos de usuario globais]]",
-    "gur-rightslog-name": "Rexistro de dereitos globais",
-    "gur-rightslog-header": "Este é un rexistro dos cambios realizados nos dereitos globais.",
-    "gur-rightslog-entry": "cambiou o grupo global ao que pertencía \"$1\" de $2 a $3",
-    "right-userrights-global": "Xestionar os dereitos de usuario globais"
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"globaluserrights": "Xestión dos dereitos de usuario globais",
+	"gur-desc": "Administración sinxela dos [[Special:GlobalUserRights|dereitos de usuario globais]]",
+	"gur-rightslog-name": "Rexistro de dereitos globais",
+	"gur-rightslog-header": "Este é un rexistro dos cambios realizados nos dereitos globais.",
+	"gur-rightslog-entry": "cambiou o grupo global ao que pertencía \"$1\" de $2 a $3",
+	"right-userrights-global": "Xestionar os dereitos de usuario globais"
 }

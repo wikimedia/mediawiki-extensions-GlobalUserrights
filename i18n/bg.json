@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "DCLXVI"
-        ]
-    },
-    "globaluserrights": "Управление на глобалните потребителски права",
-    "gur-desc": "Лесна администрация на [[Special:GlobalUserRights|глобалните потребителски права]]",
-    "gur-rightslog-name": "Дневник на глобалните права",
-    "gur-rightslog-header": "Тази страница съдържа дневник на промените в глобалните права.",
-    "right-userrights-global": "Управление на глобалните потребителски права"
+	"@metadata": {
+		"authors": [
+			"DCLXVI"
+		]
+	},
+	"globaluserrights": "Управление на глобалните потребителски права",
+	"gur-desc": "Лесна администрация на [[Special:GlobalUserRights|глобалните потребителски права]]",
+	"gur-rightslog-name": "Дневник на глобалните права",
+	"gur-rightslog-header": "Тази страница съдържа дневник на промените в глобалните права.",
+	"right-userrights-global": "Управление на глобалните потребителски права"
 }

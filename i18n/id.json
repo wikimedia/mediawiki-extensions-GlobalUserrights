@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bennylin"
-        ]
-    },
-    "globaluserrights": "Pengelolaan Hak Pengguna Global",
-    "gur-desc": "Administrasi [[Special:GlobalUserRights|hak pengguna global]] yang mudah",
-    "gur-rightslog-name": "Log hak global",
-    "gur-rightslog-header": "Ini adalah log perubahan untuk hak global.",
-    "gur-rightslog-entry": "mengubah keanggotaan kelompok global untuk $1 dari $2 menjadi $3",
-    "right-userrights-global": "Mengelola Hak Pengguna Global"
+	"@metadata": {
+		"authors": [
+			"Bennylin"
+		]
+	},
+	"globaluserrights": "Pengelolaan Hak Pengguna Global",
+	"gur-desc": "Administrasi [[Special:GlobalUserRights|hak pengguna global]] yang mudah",
+	"gur-rightslog-name": "Log hak global",
+	"gur-rightslog-header": "Ini adalah log perubahan untuk hak global.",
+	"gur-rightslog-entry": "mengubah keanggotaan kelompok global untuk $1 dari $2 menjadi $3",
+	"right-userrights-global": "Mengelola Hak Pengguna Global"
 }

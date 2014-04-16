@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "globaluserrights": "Administracion des drêts d’usanciér globâls",
-    "gur-rightslog-name": "Jornal des drêts globâls",
-    "right-userrights-global": "Administrar los drêts d’usanciér globâls"
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"globaluserrights": "Administracion des drêts d’usanciér globâls",
+	"gur-rightslog-name": "Jornal des drêts globâls",
+	"right-userrights-global": "Administrar los drêts d’usanciér globâls"
 }

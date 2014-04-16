@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie"
-        ]
-    },
-    "globaluserrights": "Gestion de derectos global de usatores",
-    "gur-desc": "Administration facile de [[Special:GlobalUserRights|derectos global de usatores]]",
-    "gur-rightslog-name": "Registro de derectos global",
-    "gur-rightslog-header": "Isto es un registro de modificationes in le derectos global.",
-    "gur-rightslog-entry": "cambiava le membrato de gruppos global pro $1 de $2 a $3",
-    "right-userrights-global": "Gerer le derectos global de usatores"
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"globaluserrights": "Gestion de derectos global de usatores",
+	"gur-desc": "Administration facile de [[Special:GlobalUserRights|derectos global de usatores]]",
+	"gur-rightslog-name": "Registro de derectos global",
+	"gur-rightslog-header": "Isto es un registro de modificationes in le derectos global.",
+	"gur-rightslog-entry": "cambiava le membrato de gruppos global pro $1 de $2 a $3",
+	"right-userrights-global": "Gerer le derectos global de usatores"
 }

@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Siebrand"
-        ]
-    },
-    "globaluserrights": "Globaal gebruikersrechtenbeheer",
-    "gur-desc": "Eenvoudig beheer van [[Special:GlobalUserRights|Globale gebruikersrechten]]",
-    "gur-rightslog-name": "Globaal gebruikerrechtenlogboek",
-    "gur-rightslog-header": "Dit logboek bevat wijzigingen aan globale gebruikersrechten.",
-    "gur-rightslog-entry": "wijzigde globaal groepslidmaatschap voor $1 van $2 naar $3",
-    "right-userrights-global": "Globale gebruikersrechten beheren"
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"globaluserrights": "Globaal gebruikersrechtenbeheer",
+	"gur-desc": "Eenvoudig beheer van [[Special:GlobalUserRights|Globale gebruikersrechten]]",
+	"gur-rightslog-name": "Globaal gebruikerrechtenlogboek",
+	"gur-rightslog-header": "Dit logboek bevat wijzigingen aan globale gebruikersrechten.",
+	"gur-rightslog-entry": "wijzigde globaal groepslidmaatschap voor $1 van $2 naar $3",
+	"right-userrights-global": "Globale gebruikersrechten beheren"
 }

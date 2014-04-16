@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Robby"
-        ]
-    },
-    "globaluserrights": "Gestioun vun de globale Benotzerrechter",
-    "gur-desc": "Einfach Gestioun vun de [[Special:GlobalUserRights|globale Benotzerrechter]]",
-    "gur-rightslog-name": "Logbuch vun de globale Benotzerrechter",
-    "gur-rightslog-header": "Dëst ass d'Logbuch vun den Ännerunge vun de globale Benotzerrechter.",
-    "gur-rightslog-entry": "huet déi global Benotzerrechter vum Benotzer $1 vun $2 op $3 geännert",
-    "right-userrights-global": "Global Benotzerrechter geréieren"
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"globaluserrights": "Gestioun vun de globale Benotzerrechter",
+	"gur-desc": "Einfach Gestioun vun de [[Special:GlobalUserRights|globale Benotzerrechter]]",
+	"gur-rightslog-name": "Logbuch vun de globale Benotzerrechter",
+	"gur-rightslog-header": "Dëst ass d'Logbuch vun den Ännerunge vun de globale Benotzerrechter.",
+	"gur-rightslog-entry": "huet déi global Benotzerrechter vum Benotzer $1 vun $2 op $3 geännert",
+	"right-userrights-global": "Global Benotzerrechter geréieren"
 }

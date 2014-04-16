@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80"
-        ]
-    },
-    "globaluserrights": "ניהול הרשאות גלובלי",
-    "gur-desc": "ניהול קל של [[Special:GlobalUserRights|global user rights]]",
-    "gur-rightslog-name": "יומן הרשאות גלובליות",
-    "gur-rightslog-header": "זהו יומן של שינויים בהרשאות גלובליות",
-    "gur-rightslog-entry": "שינה את החברות בקבוצה הגלובלית עבור $1 מ$2 ל$3",
-    "right-userrights-global": "ניהול הרשאות גלובליות"
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"globaluserrights": "ניהול הרשאות גלובלי",
+	"gur-desc": "ניהול קל של [[Special:GlobalUserRights|global user rights]]",
+	"gur-rightslog-name": "יומן הרשאות גלובליות",
+	"gur-rightslog-header": "זהו יומן של שינויים בהרשאות גלובליות",
+	"gur-rightslog-entry": "שינה את החברות בקבוצה הגלובלית עבור $1 מ$2 ל$3",
+	"right-userrights-global": "ניהול הרשאות גלובליות"
 }

@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joetaras"
-        ]
-    },
-    "globaluserrights": "Gestione de le deritte utinde globale",
-    "gur-desc": "Facile amministrazione de le [[Special:GlobalUserRights|deritte de l'utinde globale]]",
-    "gur-rightslog-name": "Archivije de le deritte globale",
-    "gur-rightslog-header": "Quiste jè 'n'archivije de le cangiaminde sus a le deritte globale.",
-    "gur-rightslog-entry": "membre d'u gruppe globale cangete pe $1 da $2 a $3",
-    "right-userrights-global": "Gestisce le deritte de l'utinde globale"
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"globaluserrights": "Gestione de le deritte utinde globale",
+	"gur-desc": "Facile amministrazione de le [[Special:GlobalUserRights|deritte de l'utinde globale]]",
+	"gur-rightslog-name": "Archivije de le deritte globale",
+	"gur-rightslog-header": "Quiste jè 'n'archivije de le cangiaminde sus a le deritte globale.",
+	"gur-rightslog-entry": "membre d'u gruppe globale cangete pe $1 da $2 a $3",
+	"right-userrights-global": "Gestisce le deritte de l'utinde globale"
 }

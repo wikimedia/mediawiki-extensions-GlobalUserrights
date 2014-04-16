@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "IAlex"
-        ]
-    },
-    "globaluserrights": "Gestion des droits utilisateurs globaux",
-    "gur-desc": "Administration simple des [[Special:GlobalUserRights|droits utilisateurs globaux]]",
-    "gur-rightslog-name": "Historique des droits globaux",
-    "gur-rightslog-header": "Ceci est le journal des modifications de statuts globaux",
-    "gur-rightslog-entry": "a modifié les droits globaux pour $1 de $2 à $3",
-    "right-userrights-global": "Gérer les droits utilisateurs globaux"
+	"@metadata": {
+		"authors": [
+			"IAlex"
+		]
+	},
+	"globaluserrights": "Gestion des droits utilisateurs globaux",
+	"gur-desc": "Administration simple des [[Special:GlobalUserRights|droits utilisateurs globaux]]",
+	"gur-rightslog-name": "Historique des droits globaux",
+	"gur-rightslog-header": "Ceci est le journal des modifications de statuts globaux",
+	"gur-rightslog-entry": "a modifié les droits globaux pour $1 de $2 à $3",
+	"right-userrights-global": "Gérer les droits utilisateurs globaux"
 }

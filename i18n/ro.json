@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "KlaudiuMihaila",
-            "Minisarm",
-            "Misterr"
-        ]
-    },
-    "globaluserrights": "Administrarea drepturilor globale ale utilizatorilor",
-    "gur-desc": "Administrarea facilă a [[Special:GlobalUserRights|drepturilor globale pentru utilizatori]]",
-    "gur-rightslog-name": "Jurnal drepturi globale",
-    "gur-rightslog-header": "Acest jurnal cuprinde modificările drepturilor globale.",
-    "gur-rightslog-entry": "a schimbat pentru $1 apartenența la grupul global de la $2 la $3",
-    "right-userrights-global": "Administrează drepturile globale ale utilizatorilor"
+	"@metadata": {
+		"authors": [
+			"KlaudiuMihaila",
+			"Minisarm",
+			"Misterr"
+		]
+	},
+	"globaluserrights": "Administrarea drepturilor globale ale utilizatorilor",
+	"gur-desc": "Administrarea facilă a [[Special:GlobalUserRights|drepturilor globale pentru utilizatori]]",
+	"gur-rightslog-name": "Jurnal drepturi globale",
+	"gur-rightslog-header": "Acest jurnal cuprinde modificările drepturilor globale.",
+	"gur-rightslog-entry": "a schimbat pentru $1 apartenența la grupul global de la $2 la $3",
+	"right-userrights-global": "Administrează drepturile globale ale utilizatorilor"
 }

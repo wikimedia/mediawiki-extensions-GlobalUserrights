@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "globaluserrights": "Upravljanje pravima globalnih korisnika",
-    "gur-desc": "Jednostavna administracija [[Special:GlobalUserRights|globalnih korisničkih prava]]",
-    "gur-rightslog-name": "Zapis globalnih prava",
-    "gur-rightslog-header": "Ovo je zapis o promjenama globalnih prava.",
-    "gur-rightslog-entry": "promijenjeno članstvo u globalnoj grupi za korisnika $1 od $2 na $3",
-    "right-userrights-global": "Upravljanje pravima globalnih korisnika"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"globaluserrights": "Upravljanje pravima globalnih korisnika",
+	"gur-desc": "Jednostavna administracija [[Special:GlobalUserRights|globalnih korisničkih prava]]",
+	"gur-rightslog-name": "Zapis globalnih prava",
+	"gur-rightslog-header": "Ovo je zapis o promjenama globalnih prava.",
+	"gur-rightslog-entry": "promijenjeno članstvo u globalnoj grupi za korisnika $1 od $2 na $3",
+	"right-userrights-global": "Upravljanje pravima globalnih korisnika"
 }

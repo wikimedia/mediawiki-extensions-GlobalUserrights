@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Yekrats"
-        ]
-    },
-    "globaluserrights": "Administrado de Ĝeneralaj Uzulaj Rajtoj",
-    "gur-desc": "Facila [[Special:GlobalUserRights|administrado de uzulaj rajtoj]]",
-    "gur-rightslog-name": "Protokolo pri ĝeneralaj rajtoj",
-    "gur-rightslog-header": "Jen protokolo pri ŝanĝoj al ĝeneralaj rajtoj.",
-    "gur-rightslog-entry": "ŝanĝis membrecon de ĝenerala grupo por $1 de $2 al $3",
-    "right-userrights-global": "Administri ĝeneralajn uzulajn rajtojn"
+	"@metadata": {
+		"authors": [
+			"Yekrats"
+		]
+	},
+	"globaluserrights": "Administrado de Ĝeneralaj Uzulaj Rajtoj",
+	"gur-desc": "Facila [[Special:GlobalUserRights|administrado de uzulaj rajtoj]]",
+	"gur-rightslog-name": "Protokolo pri ĝeneralaj rajtoj",
+	"gur-rightslog-header": "Jen protokolo pri ŝanĝoj al ĝeneralaj rajtoj.",
+	"gur-rightslog-entry": "ŝanĝis membrecon de ĝenerala grupo por $1 de $2 al $3",
+	"right-userrights-global": "Administri ĝeneralajn uzulajn rajtojn"
 }

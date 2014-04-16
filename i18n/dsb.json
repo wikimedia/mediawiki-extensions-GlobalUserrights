@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "globaluserrights": "Zastojanje globalnych wužywarskich pšawow",
-    "gur-desc": "Lažke zastojanje [[Special:GlobalUserRights|globalnych wužywarskich pšawow]]",
-    "gur-rightslog-name": "Protokol globalnych pšawow",
-    "gur-rightslog-header": "To jo protokol změnow globalnych pšawow",
-    "gur-rightslog-entry": "jo globalne kupkowe cłonkojstwo za $1 z $2 do $3 změnił",
-    "right-userrights-global": "Globalne wužywarske pšawy zastojaś"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"globaluserrights": "Zastojanje globalnych wužywarskich pšawow",
+	"gur-desc": "Lažke zastojanje [[Special:GlobalUserRights|globalnych wužywarskich pšawow]]",
+	"gur-rightslog-name": "Protokol globalnych pšawow",
+	"gur-rightslog-header": "To jo protokol změnow globalnych pšawow",
+	"gur-rightslog-entry": "jo globalne kupkowe cłonkojstwo za $1 z $2 do $3 změnił",
+	"right-userrights-global": "Globalne wužywarske pšawy zastojaś"
 }
