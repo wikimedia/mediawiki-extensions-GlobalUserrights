@@ -79,6 +79,11 @@ $specialPageAliases['gu'] = array(
 	'GlobalUserrights' => array( 'વૈશ્વિકસભ્ય_હક્કો', 'વૈશ્વિકસમૂહસભ્યપદ' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'GlobalUserrights' => array( 'הרשאות_משתמש_גלובליות' ),
+);
+
 /** Croatian (hrvatski) */
 $specialPageAliases['hr'] = array(
 	'GlobalUserrights' => array( 'Globalna_prava', 'Globalno_članstvo_grupe' ),
