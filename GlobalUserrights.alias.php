@@ -229,6 +229,11 @@ $specialPageAliases['tt-cyrl'] = array(
 	'GlobalUserrights' => array( 'Кулланучыларның_глобаль_хокуклары' ),
 );
 
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'GlobalUserrights' => array( 'Глобальні_права_користувача' ),
+);
+
 /** Cantonese (粵語) */
 $specialPageAliases['yue'] = array(
 	'GlobalUserrights' => array( '全域用戶權' ),
