@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"ChrisiPK"
+			"ChrisiPK",
+			"Kghbln"
 		]
 	},
-	"globaluserrights": "Globale Benutzerrechteverwaltung",
+	"globaluserrights": "Benutzerrechte global verwalten",
 	"gur-desc": "Einfache Verwaltung [[Special:GlobalUserRights|globaler Benutzerrechte]]",
 	"gur-rightslog-name": "Globales Rechte-Logbuch",
 	"gur-rightslog-header": "Dies ist ein Logbuch der Änderungen an globalen Benutzerrechten.",
