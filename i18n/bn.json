@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wikitanvir"
+			"Wikitanvir",
+			"Aftab1995"
 		]
 	},
 	"globaluserrights": "গ্লোবাল ব্যবহারকারী অধিকার ব্যবস্থাপনা",
-	"gur-rightslog-name": "গ্লোবাল অধিকার লগ",
-	"gur-rightslog-header": "এটি গ্লোবাল অধিকার পরিবর্তনের লগ।",
-	"gur-rightslog-entry": "$1 এর জন্য $2 থেকে $3 তে গ্লোবাল গ্রুপ সদস্যপদ পরিবর্তন করা হয়েছে",
+	"gur-rightslog-name": "বৈশ্বিক অধিকার লগ",
+	"gur-rightslog-header": "এটি বৈশ্বিক অধিকার পরিবর্তনের লগ।",
+	"gur-rightslog-entry": "$1 এর জন্য $2 থেকে $3 এ বৈশ্বিক গ্রুপ সদস্যপদ পরিবর্তন করা হয়েছে",
 	"right-userrights-global": "গ্লোবাল অধিকার ব্যবস্থাপনা"
 }
