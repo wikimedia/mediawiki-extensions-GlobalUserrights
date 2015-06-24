@@ -124,4 +124,7 @@ class GlobalUserrights extends UserrightsPage {
 		LogEventsList::showLogExtract( $output, 'gblrights', $user->getUserPage()->getPrefixedText() );
 	}
 
+	protected function getGroupName() {
+		return 'users';
+	}
 }

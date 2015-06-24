@@ -29,7 +29,6 @@ $wgExtensionMessagesFiles['GlobalUserrights'] = $dir . 'GlobalUserrights.i18n.ph
 $wgExtensionMessagesFiles['GlobalUserrightsAlias'] = $dir . 'GlobalUserrights.alias.php';
 $wgAutoloadClasses['GlobalUserrights'] = $dir . 'GlobalUserrights_body.php';
 $wgSpecialPages['GlobalUserrights'] = 'GlobalUserrights';
-$wgSpecialPageGroups['GlobalUserrights'] = 'users';
 
 // New user right, required to use Special:GlobalUserrights
 $wgAvailableRights[] = 'userrights-global';
