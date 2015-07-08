@@ -16,9 +16,15 @@ class GlobalUserrightsHooks {
 			$uid = $user;
 		}
 
-		$dbr = wfGetDB( DB_MASTER );
 		$groups = array();
+		if ( $uid === 0 ) {
+			// Optimization -- we know that anons (user ID #0) cannot be members
+			// of any (global) user groups, so we don't need to run the DB query
+			// to figure that out and we can just return the empty array here.
+			return $groups;
+		}
 
+		$dbr = wfGetDB( DB_MASTER );
 		$res = $dbr->select(
 			'global_user_groups',
 			array( 'gug_group' ),
