@@ -17,17 +17,15 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'GlobalUserrights',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:GlobalUserrights',
-	'version'        => '1.1.0',
+	'version'        => '1.1.1',
 	'author'         => 'Nathaniel Herman',
 	'descriptionmsg' => 'gur-desc',
 );
 
 // Set up the new special page
-$dir = dirname( __FILE__ ) . '/';
 $wgMessagesDirs['GlobalUserrights'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['GlobalUserrights'] = $dir . 'GlobalUserrights.i18n.php';
-$wgExtensionMessagesFiles['GlobalUserrightsAlias'] = $dir . 'GlobalUserrights.alias.php';
-$wgAutoloadClasses['GlobalUserrights'] = $dir . 'GlobalUserrights_body.php';
+$wgExtensionMessagesFiles['GlobalUserrightsAlias'] = __DIR__ . '/GlobalUserrights.alias.php';
+$wgAutoloadClasses['GlobalUserrights'] = __DIR__ . '/GlobalUserrights_body.php';
 $wgSpecialPages['GlobalUserrights'] = 'GlobalUserrights';
 
 // New user right, required to use Special:GlobalUserrights
