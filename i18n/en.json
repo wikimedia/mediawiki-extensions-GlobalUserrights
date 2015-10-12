@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nathaniel Herman"
-        ]
-    },
-    "globaluserrights": "Global User Rights Management",
-    "gur-desc": "Easy [[Special:GlobalUserRights|global user rights]] administration",
-    "gur-rightslog-name": "Global rights log",
-    "gur-rightslog-header": "This is a log of changes to global rights.",
-    "gur-rightslog-entry": "changed global group membership for $1 from $2 to $3",
-    "right-userrights-global": "Manage global user rights"
+	"@metadata": {
+		"authors": [
+			"Nathaniel Herman"
+		]
+	},
+	"globaluserrights": "Global User Rights Management",
+	"gur-desc": "Easy [[Special:GlobalUserRights|global user rights]] administration",
+	"gur-rightslog-name": "Global rights log",
+	"gur-rightslog-header": "This is a log of changes to global rights.",
+	"gur-rightslog-entry": "changed global group membership for $1 from $2 to $3",
+	"right-userrights-global": "Manage global user rights"
 }
