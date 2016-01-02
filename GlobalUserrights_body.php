@@ -120,7 +120,8 @@ class GlobalUserrights extends UserrightsPage {
 	}
 
 	protected function showLogFragment( $user, $output ) {
-		$output->addHTML( Xml::element( 'h2', null, LogPage::logName( 'gblrights' ) . "\n" ) );
+		$log = new LogPage( 'gblrights' );
+		$output->addHTML( Xml::element( 'h2', null, $log->getName() . "\n" ) );
 		LogEventsList::showLogExtract( $output, 'gblrights', $user->getUserPage()->getPrefixedText() );
 	}
 
