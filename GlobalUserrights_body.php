@@ -64,7 +64,6 @@ class GlobalUserrights extends UserrightsPage {
 			__METHOD__,
 			'IGNORE'
 		);
-		$dbw->commit();
 	}
 	
 	function removeGroup( $uid, $group ) {
@@ -77,7 +76,6 @@ class GlobalUserrights extends UserrightsPage {
 			),
 			__METHOD__
 		);
-		$dbw->commit();
 	}
 
 	/**
