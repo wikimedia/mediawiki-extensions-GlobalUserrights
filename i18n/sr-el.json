@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"FriedrickMILBarbarossa",
-			"Michaello"
+			"Michaello",
+			"Milicevic01"
 		]
 	},
 	"globaluserrights": "Upravljanje globalnim pravima korisnika",
+	"gur-desc": "Jednostavno upravljanje [[Special:GlobalUserRights|globalnim pravima]]",
 	"gur-rightslog-name": "Dnevnik globalnih prva",
 	"gur-rightslog-header": "Ovo je istorija promena globalnih prava.",
+	"gur-rightslog-entry": "je promenio globalna prava za $1 iz $2 u $3",
 	"right-userrights-global": "Upravljanje globalnim pravima korisnika"
 }
