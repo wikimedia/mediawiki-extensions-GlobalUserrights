@@ -84,4 +84,24 @@ class GlobalUserrightsHooks {
 		return true;
 	}
 
+	/**
+	 * Fixes Special:Statistics so that the correct amount of global group members
+	 * is shown there.
+	 *
+	 * @param ResultWrapper $hit
+	 * @param string $group User group name
+	 * @return bool
+	 */
+	public static function updateStatsForGUR( &$hit, $group ) {
+		if ( $group == 'staff' || $group == 'globalbot' ) {
+			$dbr = wfGetDB( DB_SLAVE );
+			$hit = $dbr->selectField(
+				'global_user_groups',
+				'COUNT(*)',
+				array( 'gug_group' => $group ),
+				__METHOD__
+			);
+		}
+		return true;
+	}
 }

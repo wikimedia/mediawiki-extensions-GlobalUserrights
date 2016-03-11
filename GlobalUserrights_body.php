@@ -1,9 +1,13 @@
 <?php
 /**
- * Special:GlobalUserrights, Special:Userrights for global groups
+ * Special:GlobalUserrights, Special:UserRights for global groups
  *
  * @file
  * @ingroup Extensions
+ * @author Nathaniel Herman <redwwjd@yahoo.com>
+ * @copyright Copyright © 2008 Nathaniel Herman
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @note Some of the code based on stuff by Lukasz 'TOR' Garczewski, as well as SpecialUserrights.php and CentralAuth
  */
 
 class GlobalUserrights extends UserrightsPage {
@@ -20,7 +24,7 @@ class GlobalUserrights extends UserrightsPage {
 	 * @param $reason String: reason
 	 */
 	function doSaveUserGroups( $user, $add, $remove, $reason = '' ) {
-		$oldGroups = efGURgetGroups( $user );
+		$oldGroups = GlobalUserrightsHooks::getGroups( $user );
 		$newGroups = $oldGroups;
 
 		// remove then add groups
@@ -65,7 +69,7 @@ class GlobalUserrights extends UserrightsPage {
 			'IGNORE'
 		);
 	}
-	
+
 	function removeGroup( $uid, $group ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->delete(
@@ -79,7 +83,7 @@ class GlobalUserrights extends UserrightsPage {
 	}
 
 	/**
-	 * Add a gblrights log entry 
+	 * Add a gblrights log entry
 	 */
 	function addLogEntry( $user, $oldGroups, $newGroups, $reason ) {
 		$log = new LogPage( 'gblrights' );
@@ -95,9 +99,9 @@ class GlobalUserrights extends UserrightsPage {
 	}
 
 	protected function showEditUserGroupsForm( $user, $groups ) {
-		// override the $groups that is passed, which will be 
+		// override the $groups that is passed, which will be
 		// the user's local groups
-		$groups = efGURgetGroups( $user );
+		$groups = GlobalUserrightsHooks::getGroups( $user );
 		parent::showEditUserGroupsForm( $user, $groups );
 	}
 

@@ -1,0 +1,58 @@
+{
+	"name": "GlobalUserrights",
+	"version": "1.3-SW",
+	"author": [
+		"Nathaniel Herman"
+	],
+	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Extension:GlobalUserrights",
+	"descriptionmsg": "gur-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"GlobalUserrights": "GlobalUserrights"
+	},
+	"MessagesDirs": {
+		"GlobalUserrights": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"GlobalUserrightsAlias": "GlobalUserrights.alias.php"
+	},
+	"AutoloadClasses": {
+		"GlobalUserrights": "GlobalUserrights_body.php",
+		"GlobalUserrightsHooks": "GlobalUserrightsHooks.php"
+	},
+	"Hooks": {
+		"UserEffectiveGroups": [
+			"GlobalUserrightsHooks::onUserEffectiveGroups"
+		],
+		"SpecialListusersQueryInfo": [
+			"GlobalUserrightsHooks::onSpecialListusersQueryInfo"
+		],
+		"SiteStatsNumberInGroup": [
+			"GlobalUserrightsHooks::updateStatsForGUR"
+		]
+	},
+	"LogTypes": [
+		"gblrights"
+	],
+	"LogNames": {
+		"gblrights": "gur-rightslog-name"
+	},
+	"LogHeaders": {
+		"gblrights": "gur-rightslog-header"
+	},
+	"LogActions": {
+		"gblrights/rights": "gur-rightslog-entry"
+	},
+	"AvailableRights": [
+		"userrights-global"
+	],
+	"GroupPermissions": {
+		"staff": {
+			"userrights-global": true
+		}
+	},
+	"manifest_version": 1
+}
