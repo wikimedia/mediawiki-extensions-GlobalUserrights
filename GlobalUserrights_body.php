@@ -92,8 +92,8 @@ class GlobalUserrights extends UserrightsPage {
 			$user->getUserPage(),
 			$reason,
 			array(
-				$this->makeGroupNameListForLog( $oldGroups ),
-				$this->makeGroupNameListForLog( $newGroups )
+				$this->makeGroupNameList( $oldGroups ),
+				$this->makeGroupNameList( $newGroups )
 			)
 		);
 	}
