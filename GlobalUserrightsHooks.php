@@ -104,4 +104,13 @@ class GlobalUserrightsHooks {
 		}
 		return true;
 	}
+
+	/**
+	 * Create SQL automatically when running update.php so sql does not have to be
+	 * applied manually
+	 */
+	public static function onLoadExtensionSchemaUpdates( $updater ) {
+		$updater->addExtensionTable( 'global_user_groups', __DIR__ . '/global_user_groups.sql' );
+		return true;
+	}
 }
