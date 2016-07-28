@@ -98,6 +98,24 @@ class GlobalUserrights extends UserrightsPage {
 		);
 	}
 
+	/**
+	 * Make a list of group names to be stored as parameter for log entries.
+	 *
+	 * This is an ugly hack backported from MediaWiki 1.26.
+	 * @todo FIXME Per the associated comment in MW 1.26 and older, we shouldn't
+	 * be using this but rather LogFormatter.
+	 *
+	 * @param array $ids
+	 * @return string
+	 */
+	function makeGroupNameListForLog( $ids ) {
+		if ( empty( $ids ) ) {
+			return '';
+		} else {
+			return $this->makeGroupNameList( $ids );
+		}
+	}
+
 	protected function showEditUserGroupsForm( $user, $groups ) {
 		// override the $groups that is passed, which will be
 		// the user's local groups
