@@ -1,8 +1,7 @@
 -- Additional table for the GlobalUserrights extension
 -- To be added to $wgSharedDB
--- replace /*$wgSharedPrefix*/ with $wgSharedPrefix
 
-CREATE TABLE /*$wgSharedPrefix*/global_user_groups (
+CREATE TABLE /*_*/global_user_groups (
   -- Key to user_id
   gug_user int unsigned NOT NULL default '0',
   -- Group name

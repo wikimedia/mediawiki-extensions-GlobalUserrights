@@ -24,6 +24,9 @@
 		"GlobalUserrightsHooks": "GlobalUserrightsHooks.php"
 	},
 	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"GlobalUserrightsHooks::onLoadExtensionSchemaUpdates"
+		],
 		"UserEffectiveGroups": [
 			"GlobalUserrightsHooks::onUserEffectiveGroups"
 		],
