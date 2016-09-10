@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Omnipaedista",
-			"Geraki"
+			"Geraki",
+			"Glavkos"
 		]
 	},
 	"gur-rightslog-name": "Αρχείο καθολικών δικαιωμάτων",
-	"gur-rightslog-entry": "άλλαξε την παγκόσμια ιδιότητα μέλους ομάδας του $1 από $2 σε $3"
+	"gur-rightslog-entry": "άλλαξε την καθολική ιδιότητα μέλους ομάδας του $1 από $2 σε $3"
 }
