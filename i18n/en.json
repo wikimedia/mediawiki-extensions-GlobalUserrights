@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nathaniel Herman"
+			"Nathaniel Herman",
+			"Mainframe98"
 		]
 	},
 	"globaluserrights": "Global User Rights Management",
@@ -9,5 +10,6 @@
 	"gur-rightslog-name": "Global rights log",
 	"gur-rightslog-header": "This is a log of changes to global rights.",
 	"gur-rightslog-entry": "changed global group membership for $1 from $2 to $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|changed}} global group membership for {{GENDER:$6|$3}} from $4 to $5",
 	"right-userrights-global": "Manage global user rights"
 }
