@@ -20,17 +20,29 @@ class GlobalUserrights extends UserrightsPage {
 	/**
 	 * Save global user groups changes in the DB
 	 *
-	 * @param $username String: username
-	 * @param $reason String: reason
+	 * @param User|UserRightsProxy $user
+	 * @param array $add Array of groups to add
+	 * @param array $remove Array of groups to remove
+	 * @param string $reason Reason for group change
+	 * @param array $tags Array of change tags to add to the log entry
+	 * @param array $groupExpiries Associative array of (group name => expiry),
+	 *   containing only those groups that are to have new expiry values set
+	 * @return array
+	 * @internal param string $username username
 	 */
-	function doSaveUserGroups( $user, $add, $remove, $reason = '' ) {
-		$oldGroups = GlobalUserrightsHooks::getGroups( $user );
+	function doSaveUserGroups( $user, $add, $remove, $reason = '', $tags = [], $groupExpiries = [] ) {
+		$uidLookup = CentralIdLookup::factory();
+
+		$uid = $uidLookup->centralIdFromLocalUser( $user );
+
+		$oldUGMs =  GlobalUserrightsHooks::getGroupMemberships( $uid );
+		$oldGroups = GlobalUserrightsHooks::getGroups( $uid );
 		$newGroups = $oldGroups;
 
 		// remove then add groups
 		if ( $remove ) {
 			$newGroups = array_diff( $newGroups, $remove );
-			$uid = $user->getId();
+
 			foreach ( $remove as $group ) {
 				// whole reason we're redefining this function is to make it use
 				// $this->removeGroup instead of $user->removeGroup, etc.
@@ -39,110 +51,156 @@ class GlobalUserrights extends UserrightsPage {
 		}
 		if ( $add ) {
 			$newGroups = array_merge( $newGroups, $add );
-			$uid = $user->getId();
+
 			foreach ( $add as $group ) {
-				$this->addGroup( $uid, $group );
+				$expiry = isset( $groupExpiries[$group] ) ? $groupExpiries[$group] : null;
+				$this->addGroup( $uid, $group, $expiry );
 			}
 		}
+
 		// get rid of duplicate groups there might be
 		$newGroups = array_unique( $newGroups );
+		$newUGMs =  GlobalUserrightsHooks::getGroupMemberships( $uid );
 
 		// Ensure that caches are cleared
 		$user->invalidateCache();
 
+		wfDebug( 'oldGlobalGroups: ' . print_r( $oldGroups, true ) . "\n" );
+		wfDebug( 'newGlobalGroups: ' . print_r( $newGroups, true ) . "\n" );
+		wfDebug( 'oldGlobalUGMs: ' . print_r( $oldUGMs, true ) . "\n" );
+		wfDebug( 'newGlobalUGMs: ' . print_r( $newUGMs, true ) . "\n" );
+
 		// if anything changed, log it
-		if ( $newGroups != $oldGroups ) {
-			$this->addLogEntry( $user, $oldGroups, $newGroups, $reason );
+		if ( $newGroups != $oldGroups || $newUGMs != $oldUGMs ) {
+			$this->addLogEntry( $user, $oldGroups, $newGroups, $reason, $tags, $oldUGMs, $newUGMs );
 		}
-		return array( $add, $remove );
+		return [ $add, $remove ];
 	}
 
-	function addGroup( $uid, $group ) {
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->insert(
-			'global_user_groups',
-			array(
-				'gug_user' => $uid,
-				'gug_group' => $group
-			),
-			__METHOD__,
-			'IGNORE'
-		);
+	/**
+	 * Add a user to a group
+	 *
+	 * @param int $uid central Id
+	 * @param string $group name of the group to add
+	 * @param string $expiry expiration of the group membership
+	 * @return bool
+	 */
+	function addGroup( $uid, $group, $expiry = null ) {
+		if ( $expiry ) {
+			$expiry = wfTimestamp( TS_MW, $expiry );
+		}
+
+		$gugm = new GlobalUserGroupMembership( $uid, $group, $expiry );
+		if ( !$gugm->insert( true ) ) {
+			return false;
+		}
+
+		return true;
 	}
 
+	/**
+	 * Removes a user from a group
+	 *
+	 * @param int $uid central Id
+	 * @param string $group name of the group
+	 * @return bool
+	 */
 	function removeGroup( $uid, $group ) {
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete(
-			'global_user_groups',
-			array(
-				'gug_user' => $uid,
-				'gug_group' => $group
-			),
-			__METHOD__
-		);
+		$gugm = new GlobalUserGroupMembership( $uid, $group );
+
+		if ( !$gugm || !$gugm->delete() ) {
+			return false;
+		}
+
+		return true;
 	}
 
 	/**
 	 * Add a gblrights log entry
+	 *
+	 * @param User|UserRightsProxy $user
+	 * @param array $oldGroups list of groups before the change
+	 * @param array $newGroups list of groups after the change
+	 * @param string $reason reason for the group change
+	 * @param array $tags Change tags for the log entry
+	 * @param array $oldUGMs Associative array of (group name => GlobalUserGroupMembership)
+	 * @param array $newUGMs Associative array of (group name => GlobalUserGroupMembership)
 	 */
-	function addLogEntry( $user, $oldGroups, $newGroups, $reason ) {
-		$log = new LogPage( 'gblrights' );
+	protected function addLogEntry( $user, $oldGroups, $newGroups, $reason, $tags, $oldUGMs, $newUGMs ) {
 
-		$log->addEntry( 'rights',
-			$user->getUserPage(),
-			$reason,
-			array(
-				$this->makeGroupNameList( $oldGroups ),
-				$this->makeGroupNameList( $newGroups )
-			)
-		);
+		// make sure $oldUGMs and $newUGMs are in the same order, and serialise
+		// each UGM object to a simplified array
+		$oldUGMs = array_map( function( $group ) use ( $oldUGMs ) {
+			return isset( $oldUGMs[$group] ) ?
+				self::serialiseUgmForLog( $oldUGMs[$group] ) :
+				null;
+		}, $oldGroups );
+		$newUGMs = array_map( function( $group ) use ( $newUGMs ) {
+			return isset( $newUGMs[$group] ) ?
+				self::serialiseUgmForLog( $newUGMs[$group] ) :
+				null;
+		}, $newGroups );
+
+		$logEntry = new ManualLogEntry( 'gblrights', 'rights' );
+		$logEntry->setPerformer( $this->getUser() );
+		$logEntry->setTarget( $user->getUserPage() );
+		$logEntry->setComment( $reason );
+		$logEntry->setParameters( [
+			'4::oldgroups' => $oldGroups,
+			'5::newgroups' => $newGroups,
+			'oldmetadata' => $oldUGMs,
+			'newmetadata' => $newUGMs,
+		] );
+		$logid = $logEntry->insert();
+		if ( count( $tags ) ) {
+			$logEntry->setTags( $tags );
+		}
+		$logEntry->publish( $logid );
 	}
 
 	/**
-	 * Make a list of group names to be stored as parameter for log entries.
-	 *
-	 * This is an ugly hack backported from MediaWiki 1.26.
-	 * @todo FIXME Per the associated comment in MW 1.26 and older, we shouldn't
-	 * be using this but rather LogFormatter.
-	 *
-	 * @param array $ids
-	 * @return string
+	 * @param User|UserRightsProxy $user
+	 * @param array $groups
+	 * @param array $groupMemberships
 	 */
-	function makeGroupNameListForLog( $ids ) {
-		if ( empty( $ids ) ) {
-			return '';
-		} else {
-			return $this->makeGroupNameList( $ids );
-		}
-	}
-
-	protected function showEditUserGroupsForm( $user, $groups ) {
+	protected function showEditUserGroupsForm( $user, $groups, $groupMemberships ) {
 		// override the $groups that is passed, which will be
 		// the user's local groups
-		$groups = GlobalUserrightsHooks::getGroups( $user );
-		parent::showEditUserGroupsForm( $user, $groups );
+		$groupMemberships = GlobalUserrightsHooks::getGroupMemberships( $user );
+		parent::showEditUserGroupsForm( $user, $groups, $groupMemberships );
 	}
 
+	/**
+	 * @return array
+	 */
 	function changeableGroups() {
-		global $wgUser;
-		if ( $wgUser->isAllowed( 'userrights-global' ) ) {
+		$groups = [
+			'add' => [],
+			'remove' => [],
+			'add-self' => [],
+			'remove-self' => []
+		];
+
+		if ( $this->getUser()->isAllowed( 'userrights-global' ) ) {
 			// all groups can be added globally
 			$all = array_merge( User::getAllGroups() );
-			return array(
-				'add' => $all,
-				'remove' => $all,
-				'add-self' => array(),
-				'remove-self' => array()
-			);
-		} else {
-			return array();
+			$groups['add'] = $all;
+			$groups['remove'] = $all;
 		}
+
+		return $groups;
 	}
 
+	/**
+	 * Show a rights log fragment for the specified user
+	 *
+	 * @param User $user
+	 * @param OutputPage $output
+	 */
 	protected function showLogFragment( $user, $output ) {
 		$log = new LogPage( 'gblrights' );
-		$output->addHTML( Xml::element( 'h2', null, $log->getName() . "\n" ) );
-		LogEventsList::showLogExtract( $output, 'gblrights', $user->getUserPage()->getPrefixedText() );
+		$output->addHTML( Xml::element( 'h2', null, $log->getName()->text() ) );
+		LogEventsList::showLogExtract( $output, 'gblrights', $user->getUserPage() );
 	}
 
 	protected function getGroupName() {

@@ -5,48 +5,48 @@ class GlobalUserrightsHooks {
 	/**
 	 * Function to get a given user's global groups
 	 *
-	 * @param $user instance of User class
+	 * @param User|int $user instance of User class or uid
 	 * @return array of global groups
 	 */
 	public static function getGroups( $user ) {
+		return array_keys( self::getGroupMemberships( $user ) );
+	}
+
+	/**
+	 * Function to get a given user's global groups memberships
+	 *
+	 * @param int|User $user instance of User class or uid
+	 * @return array
+	 */
+	public static function getGroupMemberships( $user ) {
 		if ( $user instanceof User ) {
-			$uid = $user->getId();
+			$uidLookup = CentralIdLookup::factory();
+
+			$uid = $uidLookup->centralIdFromLocalUser( $user );
 		} else {
 			// if $user isn't an instance of user, assume it's the uid
 			$uid = $user;
 		}
 
-		$groups = array();
 		if ( $uid === 0 ) {
 			// Optimization -- we know that anons (user ID #0) cannot be members
 			// of any (global) user groups, so we don't need to run the DB query
 			// to figure that out and we can just return the empty array here.
-			return $groups;
+			return [];
+		} else {
+			return GlobalUserGroupMembership::getMembershipsForUser( $uid );
 		}
-
-		$dbr = wfGetDB( DB_MASTER );
-		$res = $dbr->select(
-			'global_user_groups',
-			array( 'gug_group' ),
-			array( 'gug_user' => $uid ),
-			__METHOD__
-		);
-
-		foreach ( $res as $row ) {
-			$groups[] = $row->gug_group;
-		}
-
-		return $groups;
 	}
 
 	/**
 	 * Hook function for UserEffectiveGroups
 	 * Adds any global groups the user has to $groups
 	 *
-	 * @param $user instance of User
+	 * @param User $user instance of User
 	 * @param &$groups array of groups the user is in
+	 * @return bool
 	 */
-	public static function onUserEffectiveGroups( $user, &$groups ) {
+	public static function onUserEffectiveGroups( User $user, &$groups ) {
 		$groups = array_merge( $groups, GlobalUserrightsHooks::getGroups( $user ) );
 		$groups = array_unique( $groups );
 
@@ -58,17 +58,18 @@ class GlobalUserrightsHooks {
 	 * Updates UsersPager::getQueryInfo() to account for the global_user_groups table
 	 * This ensures that global rights show up on Special:ListUsers
 	 *
-	 * @param $that instance of UsersPager
-	 * @param &$query the query array to be returned
+	 * @param UsersPager $that instance of UsersPager
+	 * @param array &$query the query array to be returned
+	 * @return bool
 	 */
 	public static function onSpecialListusersQueryInfo( $that, &$query ) {
 		$dbr = wfGetDB( DB_SLAVE );
 
 		$query['tables'][] = 'global_user_groups';
-		$query['join_conds']['global_user_groups'] = array(
+		$query['join_conds']['global_user_groups'] = [
 			'LEFT JOIN',
 			'user_id = gug_user'
-		);
+		];
 
 		$query['fields'][3] = 'COUNT(ug_group) + COUNT(gug_group) AS numgroups';
 		// kind of yucky statement, I blame MySQL 5.0.13 http://bugs.mysql.com/bug.php?id=15610
@@ -79,6 +80,34 @@ class GlobalUserrightsHooks {
 			unset( $query['conds']['ug_group'] );
 			$reqgrp = $dbr->addQuotes( $that->requestedGroup );
 			$query['conds'][] = 'ug_group = ' . $reqgrp . 'OR gug_group = ' . $reqgrp;
+		}
+
+		return true;
+	}
+
+	/**
+	 * Hook function for UsersPagerDoBatchLookups
+	 *
+	 * @param \Wikimedia\Rdbms\IDatabase $dbr
+	 * @param array $userIds
+	 * @param array $cache
+	 * @param array $groups
+	 * @return bool
+	 */
+	public static function onUsersPagerDoBatchLookups( \Wikimedia\Rdbms\IDatabase $dbr, array $userIds, array &$cache, array &$groups ) {
+		$globalGroupsRes = $dbr->select(
+			'global_user_groups',
+			GlobalUserGroupMembership::selectFields(),
+			[ 'gug_user' => $userIds ],
+			__METHOD__
+		);
+
+		foreach ( $globalGroupsRes as $row ) {
+			$gugm = GlobalUserGroupMembership::newFromRow( $row );
+			if ( !$gugm->isExpired() ) {
+				$cache[$row->gug_user][$row->gug_group] = $gugm;
+				$groups[$row->gug_group] = true;
+			}
 		}
 
 		return true;
@@ -98,7 +127,7 @@ class GlobalUserrightsHooks {
 			$hit = $dbr->selectField(
 				'global_user_groups',
 				'COUNT(*)',
-				array( 'gug_group' => $group ),
+				[ 'gug_group' => $group ],
 				__METHOD__
 			);
 		}
@@ -108,9 +137,22 @@ class GlobalUserrightsHooks {
 	/**
 	 * Create SQL automatically when running update.php so sql does not have to be
 	 * applied manually
+	 *
+	 * @param DatabaseUpdater $updater
+	 * @return bool
 	 */
-	public static function onLoadExtensionSchemaUpdates( $updater ) {
-		$updater->addExtensionTable( 'global_user_groups', __DIR__ . '/global_user_groups.sql' );
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
+		$dir = __DIR__;
+		$updater->addExtensionTable( 'global_user_groups', $dir . '/global_user_groups.sql' );
+
+		$dir .= '/db_patches';
+
+		// Update the table with the new definitions
+		// This ensures backwards compatibility
+		$updater->addExtensionField( 'global_user_groups', 'gug_expiry', $dir . '/patch-gug_expiry-field.sql' );
+		$updater->modifyExtensionField( 'global_user_groups', 'gug_group', $dir . '/patch-gug_group-field.sql' );
+		$updater->addExtensionIndex( 'global_user_groups', 'gug_expiry', $dir . '/patch-gug_expiry-index.sql' );
+
 		return true;
 	}
 }
