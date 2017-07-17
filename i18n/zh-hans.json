@@ -4,7 +4,8 @@
 			"Bencmq",
 			"Liuxinyu970226",
 			"Wmr89502270",
-			"Xiaomingyan"
+			"Xiaomingyan",
+			"Wmr"
 		]
 	},
 	"globaluserrights": "全域用户权限管理",
@@ -12,5 +13,6 @@
 	"gur-rightslog-name": "全域权限历史记录",
 	"gur-rightslog-header": "这是改变全域用户权限的历史记录",
 	"gur-rightslog-entry": "更改$1的全域用户组自$2至$3",
+	"logentry-gblrights-rights": "$1已将{{GENDER:$6|$3}}的全域用户组从$4{{GENDER:$2|更改}}至$5",
 	"right-userrights-global": "管理全域用户权限"
 }

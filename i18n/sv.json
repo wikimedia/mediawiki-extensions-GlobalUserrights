@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gabbe.g"
+			"Gabbe.g",
+			"WikiPhoenix"
 		]
 	},
 	"globaluserrights": "Inställningar för globala rättigheter.",
@@ -9,5 +10,6 @@
 	"gur-rightslog-name": "Logg för globala rättigheter",
 	"gur-rightslog-header": "Logg över ändringar i globala rättigheter.",
 	"gur-rightslog-entry": "ändrade globala användarrättigheter för $1 från $2 till $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|ändrade}} det globala gruppmedlemsskapet för {{GENDER:$6|$3}} från $4 till $5",
 	"right-userrights-global": "Administrera globala användarrättigheter"
 }

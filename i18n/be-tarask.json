@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"EugeneZelenko",
-			"Jim-by"
+			"Jim-by",
+			"Red Winged Duck"
 		]
 	},
 	"globaluserrights": "Кіраваньне глябальнымі правамі ўдзельнікаў",
@@ -10,5 +11,6 @@
 	"gur-rightslog-name": "Журнал глябальных правоў удзельнікаў",
 	"gur-rightslog-header": "Гэта журнал зьменаў глябальных правоў.",
 	"gur-rightslog-entry": "зьменены глябальны ўдзел у групах з $2 у $3 для $1",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|зьмяніў|зьмяніла}} прыналежнасьць да глябальнай групы для {{GENDER:$6|$3}} з $4 на $5",
 	"right-userrights-global": "кіраваньне глябальнымі правамі ўдзельнікаў"
 }

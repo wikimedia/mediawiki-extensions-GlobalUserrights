@@ -9,5 +9,6 @@
 	"gur-rightslog-name": "Rexistru de permisos globales",
 	"gur-rightslog-header": "Esti ye un rexistru de los cambios de los permisos globales.",
 	"gur-rightslog-entry": "camudó la pertenencia de grupu global pa $1 de $2 a $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|camudó}} la pertenencia a grupos globales de {{GENDER:$6|$3}} dende $4 a $5",
 	"right-userrights-global": "Xestionar los permisos d'usuariu globales"
 }
