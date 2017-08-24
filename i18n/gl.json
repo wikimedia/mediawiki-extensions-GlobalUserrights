@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño"
+			"Toliño",
+			"Banjo"
 		]
 	},
 	"globaluserrights": "Xestión dos dereitos de usuario globais",
@@ -9,5 +10,6 @@
 	"gur-rightslog-name": "Rexistro de dereitos globais",
 	"gur-rightslog-header": "Este é un rexistro dos cambios realizados nos dereitos globais.",
 	"gur-rightslog-entry": "cambiou o grupo global ao que pertencía \"$1\" de $2 a $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|cambiou}} o grupo global ó que pertence {{GENDER:$6|$3}} de $4 a $5",
 	"right-userrights-global": "Xestionar os dereitos de usuario globais"
 }
