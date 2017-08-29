@@ -5,7 +5,8 @@
 			"Fievarsty",
 			"Fryed-peach",
 			"Shirayuki",
-			"Azeha"
+			"Azeha",
+			"Otokoume"
 		]
 	},
 	"globaluserrights": "グローバル利用者権限管理",
@@ -13,5 +14,6 @@
 	"gur-rightslog-name": "グローバル権限変更記録",
 	"gur-rightslog-header": "これはグローバル権限の変更記録です。",
 	"gur-rightslog-entry": "$1 の所属グローバルグループを $2 から $3 に変更しました",
+	"logentry-gblrights-rights": "$1 が {{GENDER:$6|$3}} の所属グローバルグループを $4 から $5 に{{GENDER:$2|変更しました}}",
 	"right-userrights-global": "グローバル利用者権限を管理"
 }
