@@ -63,7 +63,7 @@ class GlobalUserrightsHooks {
 	 * @return bool
 	 */
 	public static function onSpecialListusersQueryInfo( $that, &$query ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$query['tables'][] = 'global_user_groups';
 		$query['join_conds']['global_user_groups'] = [
@@ -123,7 +123,7 @@ class GlobalUserrightsHooks {
 	 */
 	public static function updateStatsForGUR( &$hit, $group ) {
 		if ( $group == 'staff' || $group == 'globalbot' ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$hit = $dbr->selectField(
 				'global_user_groups',
 				'COUNT(*)',
