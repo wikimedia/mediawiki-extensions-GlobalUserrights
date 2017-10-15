@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo.mps"
+			"Eduardo.mps",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"globaluserrights": "Gerenciamento de Permissões de Utilizadores Globais",
@@ -9,5 +10,6 @@
 	"gur-rightslog-name": "Registro de permissões globais",
 	"gur-rightslog-header": "Este é um registro das alterações às permissões globais.",
 	"gur-rightslog-entry": "alterou o grupo global de $1, de $2 para $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|modificou}} os grupos globais {{GENDER:$6|do utilizador|da utilizadora}} $3 de $4 para $5",
 	"right-userrights-global": "Gerenciar permissões de utilizadores globais"
 }
