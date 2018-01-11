@@ -3,7 +3,8 @@
 		"authors": [
 			"Liangent",
 			"Mark85296341",
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
 	"globaluserrights": "全域使用者權限管理",
@@ -11,5 +12,6 @@
 	"gur-rightslog-name": "全域權限歷史記錄",
 	"gur-rightslog-header": "這是改變全域使用者權限的歷史記錄",
 	"gur-rightslog-entry": "為 $1 改變全域使用者群組權限自 $2 到 $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|已更改}} {{GENDER:$6|$3}} 的全域群組成員資格由 $4 成為 $5",
 	"right-userrights-global": "管理全域使用者權限"
 }
