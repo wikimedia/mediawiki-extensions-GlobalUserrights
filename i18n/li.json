@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ooswesthoesbes"
+		]
+	},
+	"globaluserrights": "Wikiwied gebroekersrechtebehieër",
+	"gur-desc": "Einveljig behieër van [[Special:GlobalUserRights|wikiwiej gebroekersrechte]]",
+	"gur-rightslog-name": "Logbook van wikiwiej gebroekersrechte",
+	"gur-rightslog-header": "Dit logbook bevat verangeringe aan wikiwiej gebroekersrechte",
+	"gur-rightslog-entry": "verangerde 't wikiwied groepslidmaotsjap veur $1 van $2 nao $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|verangerde}} 't wikiwied groepslidmaotsjap veur {{GENDER:$6|$3}} van $4 nao $5",
+	"right-userrights-global": "Behieër wikiwiej gebroekersrechte"
+}
