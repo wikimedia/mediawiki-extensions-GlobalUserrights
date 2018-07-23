@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Janezdrilc"
+		]
+	},
+	"globaluserrights": "Upravljanje globalnih pravic uporabnika",
+	"gur-desc": "Enostavna administracija [[Special:GlobalUserRights|globalnih pravic uporabnika]]",
+	"gur-rightslog-name": "Dnevnik globalnih pravic",
+	"gur-rightslog-header": "V tem dnevniku so zabeležen spremembe globalnih pravic.",
+	"gur-rightslog-entry": "spremenil članstvo v globalni skupini za uporabnika $1 iz $2 v $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|spremenil|spremenila}} članstvo v globalni skupini za uporabnika {{GENDER:$6|$3}} iz $4 v $5",
+	"right-userrights-global": "Upravljaj globalne pravice uporabnika"
+}
