@@ -10,7 +10,7 @@
 	},
 	"globaluserrights": "Управљање глобалним правима корисника",
 	"gur-desc": "Једноставно управљање [[Special:GlobalUserRights|глобалним правима]]",
-	"gur-rightslog-name": "Евиденција глобалних права",
+	"gur-rightslog-name": "Дневник глобалних права",
 	"gur-rightslog-header": "Ово је историја промена глобалних права.",
 	"gur-rightslog-entry": "је променио глобална права за $1 из $2 у $3",
 	"right-userrights-global": "Управљање глобалним правима корисника"
