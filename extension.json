@@ -1,6 +1,6 @@
 {
 	"name": "GlobalUserrights",
-	"version": "1.5.1",
+	"version": "1.5.2",
 	"author": [
 		"Nathaniel Herman",
 		"Mainframe98"
@@ -27,21 +27,11 @@
 		"GlobalRightsLogFormatter": "GlobalRightsLogFormatter.php"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": [
-			"GlobalUserrightsHooks::onLoadExtensionSchemaUpdates"
-		],
-		"UserEffectiveGroups": [
-			"GlobalUserrightsHooks::onUserEffectiveGroups"
-		],
-		"SpecialListusersQueryInfo": [
-			"GlobalUserrightsHooks::onSpecialListusersQueryInfo"
-		],
-		"SiteStatsNumberInGroup": [
-			"GlobalUserrightsHooks::updateStatsForGUR"
-		],
-		"UsersPagerDoBatchLookups": [
-			"GlobalUserrightsHooks::onUsersPagerDoBatchLookups"
-		]
+		"LoadExtensionSchemaUpdates": "GlobalUserrightsHooks::onLoadExtensionSchemaUpdates",
+		"UserEffectiveGroups": "GlobalUserrightsHooks::onUserEffectiveGroups",
+		"SpecialListusersQueryInfo": "GlobalUserrightsHooks::onSpecialListusersQueryInfo",
+		"SiteStatsNumberInGroup": "GlobalUserrightsHooks::updateStatsForGUR",
+		"UsersPagerDoBatchLookups": "GlobalUserrightsHooks::onUsersPagerDoBatchLookups"
 	},
 	"LogTypes": [
 		"gblrights"
@@ -64,7 +54,7 @@
 		}
 	},
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.32.0"
 	},
 	"manifest_version": 1
 }

@@ -27,10 +27,12 @@ class GlobalUserrights extends UserrightsPage {
 	 * @param array $tags Array of change tags to add to the log entry
 	 * @param array $groupExpiries Associative array of (group name => expiry),
 	 *   containing only those groups that are to have new expiry values set
-	 * @return array
+	 * @return array Tuple of added, then removed groups
 	 * @internal param string $username username
 	 */
-	function doSaveUserGroups( $user, $add, $remove, $reason = '', $tags = [], $groupExpiries = [] ) {
+	function doSaveUserGroups( $user, array $add, array $remove, $reason = '',
+		array $tags = [], array $groupExpiries = []
+	) {
 		$uidLookup = CentralIdLookup::factory();
 
 		$uid = $uidLookup->centralIdFromLocalUser( $user );
@@ -126,8 +128,9 @@ class GlobalUserrights extends UserrightsPage {
 	 * @param array $oldUGMs Associative array of (group name => GlobalUserGroupMembership)
 	 * @param array $newUGMs Associative array of (group name => GlobalUserGroupMembership)
 	 */
-	protected function addLogEntry( $user, $oldGroups, $newGroups, $reason, $tags, $oldUGMs, $newUGMs ) {
-
+	protected function addLogEntry( $user, array $oldGroups, array $newGroups, $reason,
+		array $tags, array $oldUGMs, array $newUGMs
+	) {
 		// make sure $oldUGMs and $newUGMs are in the same order, and serialise
 		// each UGM object to a simplified array
 		$oldUGMs = array_map( function( $group ) use ( $oldUGMs ) {
