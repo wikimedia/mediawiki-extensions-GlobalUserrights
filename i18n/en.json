@@ -11,5 +11,6 @@
 	"gur-rightslog-header": "This is a log of changes to global rights.",
 	"gur-rightslog-entry": "changed global group membership for $1 from $2 to $3",
 	"logentry-gblrights-rights": "$1 {{GENDER:$2|changed}} global group membership for {{GENDER:$6|$3}} from $4 to $5",
+	"action-userrights-global": "manage global user rights",
 	"right-userrights-global": "Manage global user rights"
 }
