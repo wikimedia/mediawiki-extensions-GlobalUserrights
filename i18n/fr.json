@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"IAlex",
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
 	"globaluserrights": "Gestion des droits utilisateurs globaux",
@@ -11,5 +12,6 @@
 	"gur-rightslog-header": "Ceci est le journal des modifications de statuts globaux",
 	"gur-rightslog-entry": "a modifié les droits globaux pour $1 de $2 à $3",
 	"logentry-gblrights-rights": "$1 {{GENDER:$2|a modifié}} l'appartenance globale au groupe pour {{GENDER:$6|$3}} de $4 à $5",
+	"action-userrights-global": "gérer les droits utilisateur globaux",
 	"right-userrights-global": "Gérer les droits utilisateurs globaux"
 }
