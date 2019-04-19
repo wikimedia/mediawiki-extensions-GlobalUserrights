@@ -11,5 +11,6 @@
 	"gur-rightslog-header": "Este é um registo das alterações às permissões globais.",
 	"gur-rightslog-entry": "alterou o grupo global de $1, de $2 para $3",
 	"logentry-gblrights-rights": "$1 {{GENDER:$2|modificou}} os grupos globais {{GENDER:$6|do utilizador|da utilizadora}} $3 de $4 para $5",
+	"action-userrights-global": "gerir permissões de utilizadores globais",
 	"right-userrights-global": "Gerir permissões de utilizadores globais"
 }
