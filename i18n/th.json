@@ -4,5 +4,8 @@
 			"Geonuch"
 		]
 	},
-	"gur-rightslog-name": "ปูมสิทธิทั่วโลก"
+	"gur-desc": "การบริหาร[[Special:GlobalUserRights|สิทธิผู้ใช้ทั่วโลก]]อย่างง่าย",
+	"gur-rightslog-name": "ปูมสิทธิทั่วโลก",
+	"gur-rightslog-header": "นี้คือปูมการเปลี่ยนสิทธิทั่วโลก",
+	"gur-rightslog-entry": "เปลี่ยนกลุ่มสมาชิกทั่วโลกสำหรับ $1 จาก $2 เป็น $3"
 }
