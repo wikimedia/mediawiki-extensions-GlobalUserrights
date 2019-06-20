@@ -117,7 +117,7 @@ class GlobalUserrightsHooks {
 	 * Fixes Special:Statistics so that the correct amount of global group members
 	 * is shown there.
 	 *
-	 * @param ResultWrapper $hit
+	 * @param string|null $hit
 	 * @param string $group User group name
 	 * @return bool
 	 */
