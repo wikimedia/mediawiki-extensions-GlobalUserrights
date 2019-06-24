@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Mirin"
 		]
 	},
 	"globaluserrights": "Administrado de Ĝeneralaj Uzulaj Rajtoj",
@@ -9,5 +10,7 @@
 	"gur-rightslog-name": "Protokolo pri ĝeneralaj rajtoj",
 	"gur-rightslog-header": "Jen protokolo pri ŝanĝoj al ĝeneralaj rajtoj.",
 	"gur-rightslog-entry": "ŝanĝis membrecon de ĝenerala grupo por $1 de $2 al $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|ŝanĝis}} ĝeneralan grupan anecon de {{GENDER:$6|$3}}, el $4 al $5",
+	"action-userrights-global": "mastrumi ĝeneralaj uzantorajtoj",
 	"right-userrights-global": "Administri ĝeneralajn uzulajn rajtojn"
 }
