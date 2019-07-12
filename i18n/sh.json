@@ -10,5 +10,6 @@
 	"gur-rightslog-header": "Ovo je evidencija promjena globalnih korisničkih prava.",
 	"gur-rightslog-entry": "promijenjena pripadnost globalnim grupama za $1 iz $2 na $3",
 	"logentry-gblrights-rights": "$1 {{GENDER:$2|je izmijenio|je izmijenila}} je globalno grupno članstvo {{GENDER:$6|korisnika|korisnice}} $3 iz $4 u $5",
+	"action-userrights-global": "upravljanje globalnim pravima korisnika",
 	"right-userrights-global": "Upravljanje globalnim pravima korisnika"
 }
