@@ -129,9 +129,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @return bool Whether or not anything was inserted
 	 */
 	public function insert( $allowUpdate = false, IDatabase $dbw = null ) {
-		if ( $dbw === null ) {
-			$dbw = wfGetDB( DB_MASTER );
-		}
+		$dbw = $dbw ?: wfGetDB( DB_MASTER );
 
 		// Purge old, expired memberships from the DB
 		self::purgeExpired( $dbw );
@@ -171,15 +169,13 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 				$conds[] = 'gug_expiry < ' . $dbw->addQuotes( $dbw->timestamp() );
 			}
 
-			$row = $dbw->selectRow( 'global_user_groups', $this::selectFields(), $conds, __METHOD__ );
-			if ( $row ) {
-				$dbw->update(
-					'global_user_groups',
-					[ 'gug_expiry' => $this->expiry ? $dbw->timestamp( $this->expiry ) : null ],
-					[ 'gug_user' => $row->gug_user, 'gug_group' => $row->gug_group ],
-					__METHOD__ );
-				$affected = $dbw->affectedRows();
-			}
+			$dbw->update(
+				'global_user_groups',
+				[ 'gug_expiry' => $this->expiry ? $dbw->timestamp( $this->expiry ) : null ],
+				$conds,
+				__METHOD__
+			);
+			$affected = $dbw->affectedRows();
 		}
 
 		return $affected > 0;
