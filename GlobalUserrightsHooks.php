@@ -86,6 +86,24 @@ class GlobalUserrightsHooks {
 	}
 
 	/**
+	 * Hook function to make User#isBot return true for global bots
+	 * This is needed so that various consumers of that method, such as SocialProfile's
+	 * Special:TopUsers special page (and other Special:Top* pages), are able to
+	 * filter out global bots the way they always were supposed to.
+	 *
+	 * @param User $user User whose botness is being tested
+	 * @param bool &$isBot Well, are they a bot (true) or not (false)?
+	 */
+	public static function onUserIsBot( User $user, &$isBot ) {
+		if ( !$user->isAnon() ) {
+			$groups = self::getGroups( $user );
+			if ( in_array( 'globalbot', $groups ) ) {
+				$isBot = true;
+			}
+		}
+	}
+
+	/**
 	 * Hook function for UsersPagerDoBatchLookups
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $dbr
