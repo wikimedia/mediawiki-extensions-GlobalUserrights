@@ -4,7 +4,7 @@
  *
  * @file
  * @ingroup Extensions
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  */
 
 use Wikimedia\Rdbms\IDatabase;
@@ -33,7 +33,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 
 	/**
 	 * @param int $userId The ID of the user who belongs to the group
-	 * @param string $group The internal group name
+	 * @param string|null $group The internal group name
 	 * @param string|null $expiry Timestamp of expiry in TS_MW format, or null if no expiry
 	 */
 	public function __construct( $userId = 0, $group = null, $expiry = null ) {
@@ -161,7 +161,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 			if ( $allowUpdate ) {
 				if ( $this->expiry ) {
 					$conds[] = 'gug_expiry IS NULL OR gug_expiry != ' .
-					           $dbw->addQuotes( $dbw->timestamp( $this->expiry ) );
+						$dbw->addQuotes( $dbw->timestamp( $this->expiry ) );
 				} else {
 					$conds[] = 'gug_expiry IS NOT NULL';
 				}
@@ -307,10 +307,9 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @throws MWException
 	 */
 	public static function getLink( $ugm, IContextSource $context, $format, $userName = null ) {
-
 		if ( $format !== 'wiki' && $format !== 'html' ) {
 			throw new MWException( 'GlobalUserGroupMembership::getLink() $format parameter should be ' .
-			                       "'wiki' or 'html'" );
+				"'wiki' or 'html'" );
 		}
 
 		if ( $ugm instanceof GlobalUserGroupMembership ) {

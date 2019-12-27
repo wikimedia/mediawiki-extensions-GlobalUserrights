@@ -6,13 +6,12 @@
  * @ingroup Extensions
  * @author Nathaniel Herman <redwwjd@yahoo.com>
  * @copyright Copyright © 2008 Nathaniel Herman
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  * @note Some of the code based on stuff by Lukasz 'TOR' Garczewski, as well as SpecialUserrights.php and CentralAuth
  */
 
 class GlobalUserrights extends UserrightsPage {
 
-	/* Constructor */
 	public function __construct() {
 		SpecialPage::__construct( 'GlobalUserrights' );
 	}
@@ -37,7 +36,7 @@ class GlobalUserrights extends UserrightsPage {
 
 		$uid = $uidLookup->centralIdFromLocalUser( $user );
 
-		$oldUGMs =  GlobalUserrightsHooks::getGroupMemberships( $uid );
+		$oldUGMs = GlobalUserrightsHooks::getGroupMemberships( $uid );
 		$oldGroups = GlobalUserrightsHooks::getGroups( $uid );
 		$newGroups = $oldGroups;
 
@@ -62,7 +61,7 @@ class GlobalUserrights extends UserrightsPage {
 
 		// get rid of duplicate groups there might be
 		$newGroups = array_unique( $newGroups );
-		$newUGMs =  GlobalUserrightsHooks::getGroupMemberships( $uid );
+		$newUGMs = GlobalUserrightsHooks::getGroupMemberships( $uid );
 
 		// Ensure that caches are cleared
 		$user->invalidateCache();
@@ -84,7 +83,7 @@ class GlobalUserrights extends UserrightsPage {
 	 *
 	 * @param int $uid central Id
 	 * @param string $group name of the group to add
-	 * @param string $expiry expiration of the group membership
+	 * @param string|null $expiry expiration of the group membership
 	 * @return bool
 	 */
 	function addGroup( $uid, $group, $expiry = null ) {
@@ -133,12 +132,12 @@ class GlobalUserrights extends UserrightsPage {
 	) {
 		// make sure $oldUGMs and $newUGMs are in the same order, and serialise
 		// each UGM object to a simplified array
-		$oldUGMs = array_map( function( $group ) use ( $oldUGMs ) {
+		$oldUGMs = array_map( function ( $group ) use ( $oldUGMs ) {
 			return isset( $oldUGMs[$group] ) ?
 				self::serialiseUgmForLog( $oldUGMs[$group] ) :
 				null;
 		}, $oldGroups );
-		$newUGMs = array_map( function( $group ) use ( $newUGMs ) {
+		$newUGMs = array_map( function ( $group ) use ( $newUGMs ) {
 			return isset( $newUGMs[$group] ) ?
 				self::serialiseUgmForLog( $newUGMs[$group] ) :
 				null;

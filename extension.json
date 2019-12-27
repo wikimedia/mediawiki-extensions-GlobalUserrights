@@ -21,10 +21,10 @@
 		"GlobalUserrightsAlias": "GlobalUserrights.alias.php"
 	},
 	"AutoloadClasses": {
-		"GlobalUserrights": "GlobalUserrights_body.php",
-		"GlobalUserrightsHooks": "GlobalUserrightsHooks.php",
-		"GlobalUserGroupMembership": "GlobalUserGroupMembership.php",
-		"GlobalRightsLogFormatter": "GlobalRightsLogFormatter.php"
+		"GlobalUserrights": "includes/GlobalUserrights.php",
+		"GlobalUserrightsHooks": "includes/GlobalUserrightsHooks.php",
+		"GlobalUserGroupMembership": "includes/GlobalUserGroupMembership.php",
+		"GlobalRightsLogFormatter": "includes/GlobalRightsLogFormatter.php"
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "GlobalUserrightsHooks::onLoadExtensionSchemaUpdates",

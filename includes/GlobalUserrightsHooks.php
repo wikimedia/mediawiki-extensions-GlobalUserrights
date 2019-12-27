@@ -47,7 +47,7 @@ class GlobalUserrightsHooks {
 	 * @return bool
 	 */
 	public static function onUserEffectiveGroups( User $user, &$groups ) {
-		$groups = array_merge( $groups, GlobalUserrightsHooks::getGroups( $user ) );
+		$groups = array_merge( $groups, self::getGroups( $user ) );
 		$groups = array_unique( $groups );
 
 		return true;
@@ -161,9 +161,9 @@ class GlobalUserrightsHooks {
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
 		$dir = __DIR__;
-		$updater->addExtensionTable( 'global_user_groups', $dir . '/global_user_groups.sql' );
+		$updater->addExtensionTable( 'global_user_groups', $dir . '/../sql/global_user_groups.sql' );
 
-		$dir .= '/db_patches';
+		$dir .= '/../db_patches';
 
 		// Update the table with the new definitions
 		// This ensures backwards compatibility
