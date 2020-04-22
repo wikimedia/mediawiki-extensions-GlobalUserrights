@@ -108,8 +108,8 @@ class GlobalUserrightsHooks {
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $dbr
 	 * @param array $userIds
-	 * @param array $cache
-	 * @param array $groups
+	 * @param array &$cache
+	 * @param array &$groups
 	 * @return bool
 	 */
 	public static function onUsersPagerDoBatchLookups( \Wikimedia\Rdbms\IDatabase $dbr, array $userIds, array &$cache, array &$groups ) {
@@ -135,7 +135,7 @@ class GlobalUserrightsHooks {
 	 * Fixes Special:Statistics so that the correct amount of global group members
 	 * is shown there.
 	 *
-	 * @param string|null $hit
+	 * @param string|null &$hit
 	 * @param string $group User group name
 	 * @return bool
 	 */
