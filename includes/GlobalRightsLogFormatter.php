@@ -58,8 +58,8 @@ class GlobalRightsLogFormatter extends RightsLogFormatter {
 		$allParams = $this->entry->getParameters();
 
 		if ( count( $oldGroups ) ) {
-			$params[3] = [ 'raw' => $this->formatRightsList( $oldGroups,
-				isset( $allParams['oldmetadata'] ) ? $allParams['oldmetadata'] : [] ) ];
+			$params[3] = Message::rawParam( $this->formatRightsList( $oldGroups,
+				isset( $allParams['oldmetadata'] ) ? $allParams['oldmetadata'] : [] ) );
 		} else {
 			$params[3] = $this->msg( 'rightsnone' )->text();
 		}
@@ -67,8 +67,8 @@ class GlobalRightsLogFormatter extends RightsLogFormatter {
 		if ( count( $newGroups ) ) {
 			// Array_values is used here because of T44211
 			// see use of array_unique in UserrightsPage::doSaveUserGroups on $newGroups.
-			$params[4] = [ 'raw' => $this->formatRightsList( array_values( $newGroups ),
-				isset( $allParams['newmetadata'] ) ? $allParams['newmetadata'] : [] ) ];
+			$params[4] = Message::rawParam( $this->formatRightsList( array_values( $newGroups ),
+				isset( $allParams['newmetadata'] ) ? $allParams['newmetadata'] : [] ) );
 		} else {
 			$params[4] = $this->msg( 'rightsnone' )->text();
 		}
