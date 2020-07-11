@@ -43,7 +43,7 @@ class GlobalUserrightsHooks {
 	 * Adds any global groups the user has to $groups
 	 *
 	 * @param User $user instance of User
-	 * @param &$groups array of groups the user is in
+	 * @param array &$groups array of groups the user is in
 	 * @return bool
 	 */
 	public static function onUserEffectiveGroups( User $user, &$groups ) {
