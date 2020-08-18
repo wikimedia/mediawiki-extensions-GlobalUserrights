@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"1917 Ekim Devrimi",
 			"Kumkumuk",
 			"Mirzali"
 		]
@@ -10,5 +11,7 @@
 	"gur-rightslog-name": "Qeydê heqanê globalan",
 	"gur-rightslog-header": "Ena qeydê vurriyayışa heqaa globali ya",
 	"gur-rightslog-entry": "Namey karberê $1 global hesabê cı $2 ra ezayina cı berd $3",
+	"logentry-gblrights-rights": "$1 qandê {{GENDER:$6|$3}} rê ezayiya gruba flobali $4 ra $5 {{GENDER:$2|vuriye}}",
+	"action-userrights-global": "Heqanê karberê globali idare kerê",
 	"right-userrights-global": "Heqanê karberê globali idare keno"
 }
