@@ -13,7 +13,8 @@
 class GlobalUserrights extends UserrightsPage {
 
 	public function __construct() {
-		SpecialPage::__construct( 'GlobalUserrights' );
+		parent::__construct();
+		$this->mName = 'GlobalUserrights';
 	}
 
 	/**
