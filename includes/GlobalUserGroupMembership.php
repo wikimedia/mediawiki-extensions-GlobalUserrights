@@ -7,6 +7,7 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
@@ -333,7 +334,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 				$linkPage = $linkTitle->getFullText();
 				$groupLink = "[[$linkPage|$groupName]]";
 			} else {
-				$groupLink = Linker::link( $linkTitle, htmlspecialchars( $groupName ) );
+				$groupLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink( $linkTitle, $groupName );
 			}
 		} else {
 			$groupLink = htmlspecialchars( $groupName );
