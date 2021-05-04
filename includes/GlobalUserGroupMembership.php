@@ -224,7 +224,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 		DeferredUpdates::addUpdate( new AtomicSectionUpdate(
 			$dbw,
 			__METHOD__,
-			function ( IDatabase $dbw, $fname ) {
+			static function ( IDatabase $dbw, $fname ) {
 				$expiryCond = [ 'gug_expiry < ' . $dbw->addQuotes( $dbw->timestamp() ) ];
 
 				// delete 'em all
