@@ -105,7 +105,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 		}
 
 		if ( $dbw === null ) {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 		}
 
 		$dbw->delete(
@@ -130,7 +130,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @return bool Whether or not anything was inserted
 	 */
 	public function insert( $allowUpdate = false, IDatabase $dbw = null ) {
-		$dbw = $dbw ?: wfGetDB( DB_MASTER );
+		$dbw = $dbw ?: wfGetDB( DB_PRIMARY );
 
 		// Purge old, expired memberships from the DB
 		self::purgeExpired( $dbw );
@@ -218,7 +218,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 		}
 
 		if ( $dbw === null ) {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 		}
 
 		DeferredUpdates::addUpdate( new AtomicSectionUpdate(
@@ -243,7 +243,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 */
 	public static function getMembershipsForUser( $userId, IDatabase $db = null ) {
 		if ( !$db ) {
-			$db = wfGetDB( DB_MASTER );
+			$db = wfGetDB( DB_PRIMARY );
 		}
 
 		$res = $db->select( 'global_user_groups',
