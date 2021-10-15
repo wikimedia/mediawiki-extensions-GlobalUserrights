@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class GlobalUserrightsHooks {
 
 	/**
@@ -20,7 +22,12 @@ class GlobalUserrightsHooks {
 	 */
 	public static function getGroupMemberships( $user ) {
 		if ( $user instanceof User ) {
-			$uidLookup = CentralIdLookup::factory();
+			if ( method_exists( MediaWikiServices::class, 'getCentralIdLookupFactory' ) ) {
+				// MW1.37+
+				$uidLookup = MediaWikiServices::getInstance()->getCentralIdLookupFactory()->getLookup();
+			} else {
+				$uidLookup = CentralIdLookup::factory();
+			}
 
 			$uid = $uidLookup->centralIdFromLocalUser( $user );
 		} else {
