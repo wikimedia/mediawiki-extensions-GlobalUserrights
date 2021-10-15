@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Special:GlobalUserrights, Special:UserRights for global groups
  *
@@ -33,7 +36,12 @@ class GlobalUserrights extends UserrightsPage {
 	function doSaveUserGroups( $user, array $add, array $remove, $reason = '',
 		array $tags = [], array $groupExpiries = []
 	) {
-		$uidLookup = CentralIdLookup::factory();
+		if ( method_exists( MediaWikiServices::class, 'getCentralIdLookupFactory' ) ) {
+			// MW1.37+
+			$uidLookup = MediaWikiServices::getInstance()->getCentralIdLookupFactory()->getLookup();
+		} else {
+			$uidLookup = CentralIdLookup::factory();
+		}
 
 		$uid = $uidLookup->centralIdFromLocalUser( $user );
 
