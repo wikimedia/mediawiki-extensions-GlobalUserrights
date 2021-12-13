@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Janezdrilc"
+			"Janezdrilc",
+			"Eleassar"
 		]
 	},
 	"globaluserrights": "Upravljanje globalnih pravic uporabnika",
-	"gur-desc": "Enostavna administracija [[Special:GlobalUserRights|globalnih pravic uporabnika]]",
+	"gur-desc": "Preprosto upravljanje [[Special:GlobalUserRights|globalnih pravic uporabnika]]",
 	"gur-rightslog-name": "Dnevnik globalnih pravic",
 	"gur-rightslog-header": "V tem dnevniku so zabeležen spremembe globalnih pravic.",
 	"gur-rightslog-entry": "spremenil članstvo v globalni skupini za uporabnika $1 iz $2 v $3",

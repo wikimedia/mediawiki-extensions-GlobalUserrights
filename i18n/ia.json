@@ -9,5 +9,7 @@
 	"gur-rightslog-name": "Registro de derectos global",
 	"gur-rightslog-header": "Isto es un registro de modificationes in le derectos global.",
 	"gur-rightslog-entry": "cambiava le membrato de gruppos global pro $1 de $2 a $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|ha cambiate}} le appertinentia a gruppos global pro {{GENDER:$6|$3}} de $4 a $5",
+	"action-userrights-global": "gerer le derectos global de usatores",
 	"right-userrights-global": "Gerer le derectos global de usatores"
 }

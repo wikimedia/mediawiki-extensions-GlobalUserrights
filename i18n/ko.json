@@ -3,14 +3,15 @@
 		"authors": [
 			"Kwj2772",
 			"Nuevo Paso",
-			"아라"
+			"아라",
+			"밝은소년"
 		]
 	},
-	"globaluserrights": "공통 계정 권한 관리",
-	"gur-desc": "쉬운 [[Special:GlobalUserRights|공통 계정 권한 관리]]",
-	"gur-rightslog-name": "공통 권한 기록",
-	"gur-rightslog-header": "공통 권한 바꾸기 기록입니다.",
+	"globaluserrights": "전역 계정 권한 관리",
+	"gur-desc": "쉬운 [[Special:GlobalUserRights|전역 계정 권한 관리]]",
+	"gur-rightslog-name": "전역 권한 기록",
+	"gur-rightslog-header": "전역 권한 바꾸기 기록입니다.",
 	"gur-rightslog-entry": "$1의 공통 권한을 $2에서 $3으로 바꿈",
 	"logentry-gblrights-rights": "$1 님이 {{GENDER:$6|$3}} 님의 통합 계정 권한을 $4에서 $5(으)로 {{GENDER:$2|바꾸었습니다}}",
-	"right-userrights-global": "공통 권한 관리하기"
+	"right-userrights-global": "전역 권한 관리하기"
 }

@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Guycn2",
-			"Steeve815"
+			"Steeve815",
+			"דגש"
 		]
 	},
 	"globaluserrights": "ניהול הרשאות גלובליות",
@@ -11,6 +12,6 @@
 	"gur-rightslog-name": "יומן הרשאות גלובליות",
 	"gur-rightslog-header": "יומן זה מציג את השינויים בהרשאות הגלובליות של המשתמשים.",
 	"gur-rightslog-entry": "שינה את החברות בקבוצה הגלובלית עבור $1 מ$2 ל$3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|שינה|שינתה}} את ההרשאות הגלובליות של {{GENDER:$6|$3}} מ{{GRAMMAR:תחילית|$4}} ל{{GRAMMAR:תחילית|$5}}",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|שינה|שינתה}} את קבוצות המשתמש הגלובליות של {{GENDER:$6|$3}} מ{{GRAMMAR:תחילית|$4}} ל{{GRAMMAR:תחילית|$5}}",
 	"right-userrights-global": "ניהול הרשאות גלובליות"
 }

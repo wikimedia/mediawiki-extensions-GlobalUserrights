@@ -4,10 +4,11 @@
 			"Andriykopanytsia",
 			"Piramidion",
 			"Vlad5250",
-			"Ата"
+			"Ата",
+			"DDPAT"
 		]
 	},
-	"globaluserrights": "Керування глобальними правами користувачів",
+	"globaluserrights": "Управління глобальними правами користувачів",
 	"gur-desc": "Просте адміністрування [[Special:GlobalUserRights|глобальних прав користувачів]]",
 	"gur-rightslog-name": "Журнал глобальних прав",
 	"gur-rightslog-header": "Це журнал змін глобальних прав.",
