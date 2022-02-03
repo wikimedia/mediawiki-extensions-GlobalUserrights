@@ -100,7 +100,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	}
 
 	public function delete( IDatabase $dbw = null ) {
-		if ( wfReadOnly() ) {
+		if ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return false;
 		}
 
@@ -213,7 +213,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @param IDatabase|null $dbw
 	 */
 	public static function purgeExpired( IDatabase $dbw = null ) {
-		if ( wfReadOnly() ) {
+		if ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return;
 		}
 
