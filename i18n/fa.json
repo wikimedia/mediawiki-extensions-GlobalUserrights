@@ -4,12 +4,13 @@
 			"Mjbmr",
 			"ZxxZxxZ",
 			"Jeeputer",
-			"Beginneruser"
+			"Beginneruser",
+			"Sunfyre"
 		]
 	},
-	"globaluserrights": "مدیریت سراسری امتیازات کاربری",
+	"globaluserrights": "مدیریت اختیارات سراسری کاربر",
 	"gur-desc": "مدیریت آسان [[Special:GlobalUserRights|امتیازات سراسری کاربری]]",
-	"gur-rightslog-name": "سیاههٔ امتیازات سراسری",
+	"gur-rightslog-name": "سیاههٔ اختیارات سراسری",
 	"gur-rightslog-header": "این سیاهه‌ای از تغییرات امتیازات سراسری است.",
 	"gur-rightslog-entry": "عضویت در گروه سراسری برای $1 را از $2 به $3 تغییر داد",
 	"right-userrights-global": "مدیریت امتیازات سراسری کاربر"
