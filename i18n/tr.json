@@ -3,7 +3,8 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Vito Genovese",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"globaluserrights": "Küresel Kullanıcı Hakları Yönetimi",
@@ -11,7 +12,7 @@
 	"gur-rightslog-name": "Küresel hakları günlüğü",
 	"gur-rightslog-header": "Bu küresel haklardaki değişikliklerin günlüğüdür.",
 	"gur-rightslog-entry": "$1 adlı kullanıcının küresel grup üyeliği $2 iken $3 olarak değiştirildi",
-	"logentry-gblrights-rights": "$1, {{GENDER:$6|$3}} küresel grup üyelik için $4 olarak $5 {{GENDER:$2|değiştirdi}}",
+	"logentry-gblrights-rights": "$1, {{GENDER:$6|$3}} için küresel grup üyelik $4 ile $5 olarak {{GENDER:$2|değiştirdi}}",
 	"action-userrights-global": "küresel kullanıcı haklarını yönet",
 	"right-userrights-global": "Küresel kullanıcı haklarını yönet"
 }
