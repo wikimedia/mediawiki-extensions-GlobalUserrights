@@ -1,12 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"DCLXVI"
+			"DCLXVI",
+			"Vlad5250"
 		]
 	},
 	"globaluserrights": "Управление на глобалните потребителски права",
 	"gur-desc": "Лесна администрация на [[Special:GlobalUserRights|глобалните потребителски права]]",
 	"gur-rightslog-name": "Дневник на глобалните права",
 	"gur-rightslog-header": "Тази страница съдържа дневник на промените в глобалните права.",
+	"gur-rightslog-entry": "промени глобалното членство в групи за $1 от $2 на $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|промени}} глобалното членство в групи за {{GENDER:$6| $3 }} от $4 на $5",
+	"action-userrights-global": "управление на глобалните потребителски права",
 	"right-userrights-global": "Управление на глобалните потребителски права"
 }
