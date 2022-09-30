@@ -163,9 +163,7 @@ class GlobalUserrights extends UserrightsPage {
 			'newmetadata' => $newUGMs,
 		] );
 		$logid = $logEntry->insert();
-		if ( count( $tags ) ) {
-			$logEntry->setTags( $tags );
-		}
+		$logEntry->setTags( $tags );
 		$logEntry->publish( $logid );
 	}
 
