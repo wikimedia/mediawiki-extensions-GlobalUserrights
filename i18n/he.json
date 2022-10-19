@@ -13,5 +13,6 @@
 	"gur-rightslog-header": "יומן זה מציג את השינויים בהרשאות הגלובליות של המשתמשים.",
 	"gur-rightslog-entry": "שינה את החברות בקבוצה הגלובלית עבור $1 מ$2 ל$3",
 	"logentry-gblrights-rights": "$1 {{GENDER:$2|שינה|שינתה}} את קבוצות המשתמש הגלובליות של {{GENDER:$6|$3}} מ{{GRAMMAR:תחילית|$4}} ל{{GRAMMAR:תחילית|$5}}",
+	"action-userrights-global": "לנהל הרשאות גלובליות",
 	"right-userrights-global": "ניהול הרשאות גלובליות"
 }
