@@ -5,11 +5,12 @@
 			"Janezdrilc"
 		]
 	},
-	"globaluserrights": "Upravljanje globalnih pravic uporabnika",
-	"gur-desc": "Preprosto upravljanje [[Special:GlobalUserRights|globalnih pravic uporabnika]]",
+	"globaluserrights": "Upravljanje globalnih uporabniških pravic",
+	"gur-desc": "Preprosto upravljanje [[Special:GlobalUserRights|globalnih uporabniških pravic]]",
 	"gur-rightslog-name": "Dnevnik globalnih pravic",
 	"gur-rightslog-header": "V tem dnevniku so zabeležen spremembe globalnih pravic.",
 	"gur-rightslog-entry": "spremenil članstvo v globalni skupini za uporabnika $1 iz $2 v $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|spremenil|spremenila}} članstvo v globalni skupini za uporabnika {{GENDER:$6|$3}} iz $4 v $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|spremenil|spremenila|spremenil_a}} članstvo v globalni skupini za {{GENDER:$6|uporabnika|uporabnico|uporabnika_co}} {{GENDER:$6|$3}} iz $4 v $5",
+	"action-userrights-global": "upravljanje globalnih uporabniških pravic",
 	"right-userrights-global": "Upravljaj globalne pravice uporabnika"
 }
