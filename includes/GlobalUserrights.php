@@ -192,7 +192,7 @@ class GlobalUserrights extends UserrightsPage {
 
 		if ( $this->getUser()->isAllowed( 'userrights-global' ) ) {
 			// all groups can be added globally
-			$all = array_merge( User::getAllGroups() );
+			$all = array_merge( MediaWikiServices::getInstance()->getUserGroupManager()->listAllGroups() );
 			$groups['add'] = $all;
 			$groups['remove'] = $all;
 		}
