@@ -3,15 +3,16 @@
 		"authors": [
 			"Gomoko",
 			"IAlex",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
-	"globaluserrights": "Gestion des droits utilisateurs globaux",
-	"gur-desc": "Administration simple des [[Special:GlobalUserRights|droits utilisateurs globaux]]",
+	"globaluserrights": "Gestion des droits globaux des utilisateurs",
+	"gur-desc": "Administration simple des [[Special:GlobalUserRights|droits globaux des utilisateurs]]",
 	"gur-rightslog-name": "Historique des droits globaux",
-	"gur-rightslog-header": "Ceci est le journal des modifications de statuts globaux",
+	"gur-rightslog-header": "Ceci est le journal des modifications de droits globaux",
 	"gur-rightslog-entry": "a modifié les droits globaux pour $1 de $2 à $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|a modifié}} l'appartenance globale au groupe pour {{GENDER:$6|$3}} de $4 à $5",
-	"action-userrights-global": "gérer les droits utilisateur globaux",
+	"logentry-gblrights-rights": "$1{{GENDER:$2|}} a modifié l’appartenance globale au groupe pour $3{{GENDER:$6|}} de $4 à $5",
+	"action-userrights-global": "gérer les droits d’utilisateur globaux",
 	"right-userrights-global": "Gérer les droits utilisateurs globaux"
 }
