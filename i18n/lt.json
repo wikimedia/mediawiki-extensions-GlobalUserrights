@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"globaluserrights": "Visuotinių naudotojų teisių valdymas",
+	"gur-desc": "Lengvas [[Special:GlobalUserRights|visuotinių naudotojo teisių]] administravimas",
+	"gur-rightslog-name": "Visuotinis teisių žurnalas",
+	"gur-rightslog-header": "Tai visuotinių teisių pokyčių žurnalas.",
+	"action-userrights-global": "valdyti visuotines naudotojų teises",
+	"right-userrights-global": "Valdyti visuotines naudotojų teises"
+}
