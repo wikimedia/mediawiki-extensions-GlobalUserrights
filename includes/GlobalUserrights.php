@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserIdentity;
 
 /**
  * Special:GlobalUserrights, Special:UserRights for global groups
@@ -23,7 +24,7 @@ class GlobalUserrights extends UserrightsPage {
 	/**
 	 * Save global user groups changes in the DB
 	 *
-	 * @param User|UserRightsProxy $user
+	 * @param UserIdentity $user
 	 * @param array $add Array of groups to add
 	 * @param array $remove Array of groups to remove
 	 * @param string $reason Reason for group change
@@ -128,7 +129,7 @@ class GlobalUserrights extends UserrightsPage {
 	/**
 	 * Add a gblrights log entry
 	 *
-	 * @param User|UserRightsProxy $user
+	 * @param UserIdentity $user
 	 * @param array $oldGroups list of groups before the change
 	 * @param array $newGroups list of groups after the change
 	 * @param string $reason reason for the group change
@@ -168,7 +169,7 @@ class GlobalUserrights extends UserrightsPage {
 	}
 
 	/**
-	 * @param User|UserRightsProxy $user
+	 * @param UserIdentity $user
 	 * @param array $groups
 	 * @param array $groupMemberships
 	 */
@@ -203,7 +204,7 @@ class GlobalUserrights extends UserrightsPage {
 	/**
 	 * Show a rights log fragment for the specified user
 	 *
-	 * @param User $user
+	 * @param UserIdentity $user
 	 * @param OutputPage $output
 	 */
 	protected function showLogFragment( $user, $output ) {
