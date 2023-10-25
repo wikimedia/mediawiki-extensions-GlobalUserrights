@@ -11,5 +11,6 @@
 	"gur-rightslog-header": "Este é un rexistro dos cambios realizados nos dereitos globais.",
 	"gur-rightslog-entry": "cambiou o grupo global ao que pertencía \"$1\" de $2 a $3",
 	"logentry-gblrights-rights": "$1 {{GENDER:$2|cambiou}} o grupo global ó que pertence {{GENDER:$6|$3}} de $4 a $5",
+	"action-userrights-global": "xestionar os dereitos de usuario globais",
 	"right-userrights-global": "Xestionar os dereitos de usuario globais"
 }
