@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"TheAafi"
+		]
+	},
+	"globaluserrights": "عالمی صارفی حقوق کا انتظام",
+	"gur-desc": "[[Special:GlobalUserRights|عالمی صارفی حقوق]] کا آسان انتظام",
+	"gur-rightslog-name": "نوشتہ عالمی حقوق",
+	"gur-rightslog-header": "یہ عالمی صارفی اختیارات میں تبدیلیوں کا نوشتہ ہے۔",
+	"gur-rightslog-entry": "$1 کی عالمی گروہی رکنیت $2 سے $3 میں تبدیل کی۔",
+	"logentry-gblrights-rights": "$1 نے {{GENDER:$6|$3}} کی عالمی گروہی رکنیت $4 سے $5 میں {{GENDER:$2|تبدیل}} کی۔",
+	"action-userrights-global": "عالمی صارفی حقوق کا نظم کریں",
+	"right-userrights-global": "عالمی صارفی حقوق کا نظم کریں"
+}
