@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Snævar",
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
-	"gur-rightslog-name": "Altæk réttindaskrá notenda",
-	"gur-rightslog-header": "Þetta er skrá yfir breytingar á altækum réttindum notenda."
+	"gur-rightslog-name": "Atburðaskrá altækra réttinda",
+	"gur-rightslog-header": "Þetta er atburðaskrá breytinga á altækum réttindum."
 }
