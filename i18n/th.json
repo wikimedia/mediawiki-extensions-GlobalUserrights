@@ -1,11 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geonuch"
+			"Geonuch",
+			"Ekminarin"
 		]
 	},
-	"gur-desc": "การบริหาร[[Special:GlobalUserRights|สิทธิผู้ใช้ทั่วโลก]]อย่างง่าย",
-	"gur-rightslog-name": "ปูมสิทธิทั่วโลก",
-	"gur-rightslog-header": "นี้คือปูมการเปลี่ยนสิทธิทั่วโลก",
-	"gur-rightslog-entry": "เปลี่ยนกลุ่มสมาชิกทั่วโลกสำหรับ $1 จาก $2 เป็น $3"
+	"globaluserrights": "การจัดการสิทธิผู้ใช้ข้ามโครงการ",
+	"gur-desc": "การบริหาร[[Special:GlobalUserRights|สิทธิผู้ใช้ข้ามโครงการ]]อย่างง่าย",
+	"gur-rightslog-name": "ปูมสิทธิข้ามโครงการ",
+	"gur-rightslog-header": "นี่คือปูมการเปลี่ยนแปลงสิทธิข้ามโครงการ",
+	"gur-rightslog-entry": "เปลี่ยนกลุ่มสมาชิกข้ามโครงการสำหรับ $1 จาก $2 เป็น $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|เปลี่ยน}}กลุ่มสมาชิกข้ามโครงการสำหรับ {{GENDER:$6|$3}} จาก $4 เป็น $5",
+	"action-userrights-global": "จัดการสิทธิผู้ใช้ข้ามโครงการ",
+	"right-userrights-global": "จัดการสิทธิผู้ใช้ข้ามโครงการ"
 }
