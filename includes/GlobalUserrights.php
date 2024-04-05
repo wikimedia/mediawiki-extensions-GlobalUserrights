@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
 
 /**
@@ -74,7 +75,12 @@ class GlobalUserrights extends UserrightsPage {
 		$newUGMs = GlobalUserrightsHooks::getGroupMemberships( $uid );
 
 		// Ensure that caches are cleared
-		$user->invalidateCache();
+		if ( method_exists( UserFactory::class, 'invalidateCache' ) ) {
+			// MW 1.41+
+			MediaWikiServices::getInstance()->getUserFactory()->invalidateCache( $user );
+		} else {
+			$user->invalidateCache();
+		}
 
 		wfDebug( 'oldGlobalGroups: ' . print_r( $oldGroups, true ) . "\n" );
 		wfDebug( 'newGlobalGroups: ' . print_r( $newGroups, true ) . "\n" );
