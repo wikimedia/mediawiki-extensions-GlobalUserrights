@@ -1,13 +1,14 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserIdentity;
 
 class GlobalUserrightsHooks {
 
 	/**
 	 * Function to get a given user's global groups
 	 *
-	 * @param User|int $user instance of User class or uid
+	 * @param UserIdentity|int $user instance of UserIdentity class or uid
 	 * @return array of global groups
 	 */
 	public static function getGroups( $user ) {
@@ -17,11 +18,11 @@ class GlobalUserrightsHooks {
 	/**
 	 * Function to get a given user's global groups memberships
 	 *
-	 * @param int|User $user instance of User class or uid
+	 * @param int|UserIdentity $user instance of UserIdentity class or uid
 	 * @return array
 	 */
 	public static function getGroupMemberships( $user ) {
-		if ( $user instanceof User ) {
+		if ( $user instanceof UserIdentity ) {
 			if ( method_exists( MediaWikiServices::class, 'getCentralIdLookupFactory' ) ) {
 				// MW1.37+
 				$uidLookup = MediaWikiServices::getInstance()->getCentralIdLookupFactory()->getLookup();
