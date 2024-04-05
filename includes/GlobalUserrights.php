@@ -155,7 +155,7 @@ class GlobalUserrights extends UserrightsPage {
 
 		$logEntry = new ManualLogEntry( 'gblrights', 'rights' );
 		$logEntry->setPerformer( $this->getUser() );
-		$logEntry->setTarget( $user->getUserPage() );
+		$logEntry->setTarget( Title::makeTitle( NS_USER, $user->getName() ) );
 		$logEntry->setComment( $reason );
 		$logEntry->setParameters( [
 			'4::oldgroups' => $oldGroups,
@@ -212,7 +212,7 @@ class GlobalUserrights extends UserrightsPage {
 	protected function showLogFragment( $user, $output ) {
 		$log = new LogPage( 'gblrights' );
 		$output->addHTML( Xml::element( 'h2', null, $log->getName()->text() ) );
-		LogEventsList::showLogExtract( $output, 'gblrights', $user->getUserPage() );
+		LogEventsList::showLogExtract( $output, 'gblrights', Title::makeTitle( NS_USER, $user->getName() ) );
 	}
 
 	protected function getGroupName() {
