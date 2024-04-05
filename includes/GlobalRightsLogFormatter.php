@@ -45,12 +45,12 @@ class GlobalRightsLogFormatter extends RightsLogFormatter {
 		$userName = $this->entry->getTarget()->getText();
 		if ( !$this->plaintext && count( $oldGroups ) ) {
 			foreach ( $oldGroups as &$group ) {
-				$group = GlobalUserGroupMembership::getGroupMemberName( $group, $userName );
+				$group = $this->context->getLanguage()->getGroupMemberName( $group, $userName );
 			}
 		}
 		if ( !$this->plaintext && count( $newGroups ) ) {
 			foreach ( $newGroups as &$group ) {
-				$group = GlobalUserGroupMembership::getGroupMemberName( $group, $userName );
+				$group = $this->context->getLanguage()->getGroupMemberName( $group, $userName );
 			}
 		}
 
