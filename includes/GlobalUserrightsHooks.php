@@ -78,10 +78,6 @@ class GlobalUserrightsHooks {
 			'user_id = gug_user'
 		];
 
-		$query['fields'][3] = 'COUNT(ug_group) + COUNT(gug_group) AS numgroups';
-		// kind of yucky statement, I blame MySQL 5.0.13 http://bugs.mysql.com/bug.php?id=15610
-		$query['fields'][4] = 'GREATEST(COALESCE(ug_group, gug_group), COALESCE(gug_group, ug_group)) AS singlegroup';
-
 		// if there's a $query['conds']['ug_group'], destroy it and make one that accounts for gug_group
 		if ( isset( $query['conds']['ug_group'] ) ) {
 			unset( $query['conds']['ug_group'] );
