@@ -70,7 +70,7 @@ class GlobalUserrightsHooks {
 	 * @return bool
 	 */
 	public static function onSpecialListusersQueryInfo( $that, &$query ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		$query['tables'][] = 'global_user_groups';
 		$query['join_conds']['global_user_groups'] = [
