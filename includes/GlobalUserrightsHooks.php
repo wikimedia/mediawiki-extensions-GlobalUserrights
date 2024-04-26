@@ -165,9 +165,21 @@ class GlobalUserrightsHooks {
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
 		$dir = __DIR__;
-		$updater->addExtensionTable( 'global_user_groups', $dir . '/../sql/global_user_groups.sql' );
 
-		$dir .= '/../db_patches';
+		$dbType = $updater->getDB()->getType();
+		$dir = dirname( __DIR__ ) . '/sql/';
+
+		$updater->addExtensionTable(
+			'global_user_groups',
+			"$dir/$dbType/tables-generated.sql"
+		);
+
+		$dir = dirname( __DIR__ ) . '/db_patches';
+
+		if ( $dbType === 'postgres' ) {
+			// Currently no schema changes with postgres, bail out
+			return;
+		}
 
 		// Update the table with the new definitions
 		// This ensures backwards compatibility

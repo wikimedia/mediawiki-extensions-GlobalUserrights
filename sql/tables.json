@@ -1,0 +1,30 @@
+[
+	{
+		"name": "global_user_groups",
+		"columns": [
+			{
+				"name": "gug_user",
+				"comment": "Key to user_id",
+				"type": "bigint",
+				"options": { "unsigned": true, "notnull": true, "autoincrement": false }
+			},
+			{
+				"name": "gug_group",
+				"comment": "Group name",
+				"type": "binary",
+				"options": { "length": 255, "default": "", "notnull": false }
+			},
+			{
+				"name": "gug_expiry",
+				"comment": "Text username or IP address",
+				"type": "mwtimestamp",
+				"options": { "notnull": true }
+			}
+		],
+		"indexes": [
+			{ "name": "gug_group", "columns": [ "gug_group" ], "unique": false },
+			{ "name": "gug_expiry", "columns": [ "gug_expiry" ], "unique": false }
+		],
+		"pk": [ "gug_user", "gug_group" ]
+	}
+]
