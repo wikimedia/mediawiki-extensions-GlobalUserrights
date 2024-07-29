@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"globaluserrights": "Upravjenje globalnymi pravami koristnikov",
+	"gur-desc": "Legko upravjanje [[Special:GlobalUserRights|globalnymi pravami koristnika]]",
+	"gur-rightslog-name": "Dnevnik globalnyh prav",
+	"gur-rightslog-header": "Tuto jest dnevnik izměn v globalnyh pravah.",
+	"gur-rightslog-entry": "izměnil členstvo globalnoj grupy za koristnika $1 s $2 na $3",
+	"logentry-gblrights-rights": "$1 izměnil{{GENDER:$2||a}} členstvo globalnoj grupy za {{GENDER:$6|koristnika|koristnicu}} $3 s $4 na $5",
+	"action-userrights-global": "Upravjenje globalnymi pravami koristnikov",
+	"right-userrights-global": "Upravjenje globalnymi pravami koristnikov"
+}
