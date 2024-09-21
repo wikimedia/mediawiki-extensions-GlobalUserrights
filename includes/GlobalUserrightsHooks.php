@@ -145,7 +145,7 @@ class GlobalUserrightsHooks {
 	 */
 	public static function updateStatsForGUR( &$hit, $group ) {
 		if ( $group == 'staff' || $group == 'globalbot' ) {
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			$hit = $dbr->selectField(
 				'global_user_groups',
 				'COUNT(*)',
