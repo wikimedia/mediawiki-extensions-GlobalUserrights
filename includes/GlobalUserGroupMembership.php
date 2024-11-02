@@ -99,7 +99,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 		];
 	}
 
-	public function delete( IDatabase $dbw = null ) {
+	public function delete( ?IDatabase $dbw = null ) {
 		if ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return false;
 		}
@@ -129,7 +129,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @param IDatabase|null $dbw If you have one available
 	 * @return bool Whether or not anything was inserted
 	 */
-	public function insert( $allowUpdate = false, IDatabase $dbw = null ) {
+	public function insert( $allowUpdate = false, ?IDatabase $dbw = null ) {
 		$dbw = $dbw ?: $dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		// Purge old, expired memberships from the DB
@@ -212,7 +212,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 *
 	 * @param IDatabase|null $dbw
 	 */
-	public static function purgeExpired( IDatabase $dbw = null ) {
+	public static function purgeExpired( ?IDatabase $dbw = null ) {
 		if ( MediaWikiServices::getInstance()->getReadOnlyMode()->isReadOnly() ) {
 			return;
 		}
@@ -241,7 +241,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @param IDatabase|null $db Optional database connection
 	 * @return array Associative array of (group name => UserGroupMembership object)
 	 */
-	public static function getMembershipsForUser( $userId, IDatabase $db = null ) {
+	public static function getMembershipsForUser( $userId, ?IDatabase $db = null ) {
 		if ( !$db ) {
 			$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		}
@@ -272,7 +272,7 @@ class GlobalUserGroupMembership extends UserGroupMembership {
 	 * @param IDatabase|null $db Optional database connection
 	 * @return UserGroupMembership|false
 	 */
-	public static function getMembership( $userId, $group, IDatabase $db = null ) {
+	public static function getMembership( $userId, $group, ?IDatabase $db = null ) {
 		if ( !$db ) {
 			$db = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		}
