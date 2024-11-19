@@ -3,7 +3,8 @@
 		"authors": [
 			"Festina90",
 			"Mainframe98",
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
 	"globaluserrights": "Globaal gebruikersrechtenbeheer",
@@ -11,7 +12,7 @@
 	"gur-rightslog-name": "Globaal gebruikerrechtenlogboek",
 	"gur-rightslog-header": "Dit logboek bevat wijzigingen aan globale gebruikersrechten.",
 	"gur-rightslog-entry": "heeft het globaal groepslidmaatschap gewijzigd voor $1 van $2 naar $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|heeft}} het globaal groepslidmaatschap voor {{GENDER:$6|$3}} gewijzigd van $4 naar $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|heeft}} het globaal groepslidmaatschap voor {{GENDER:$6|$3}} gewijzigd van $4 in $5",
 	"action-userrights-global": "globale gebruikersrechten te beheren",
 	"right-userrights-global": "Globale gebruikersrechten beheren"
 }
