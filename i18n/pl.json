@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Leinad",
+			"Msz2001",
 			"Rail",
 			"Railfail536"
 		]
@@ -11,7 +12,7 @@
 	"gur-rightslog-name": "Rejestr globalnych uprawnień",
 	"gur-rightslog-header": "To jest rejestr zmian globalnych uprawnień",
 	"gur-rightslog-entry": "zmienił globalną przynależność $1 do grup ($2 → $3)",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} globalną przynależność {{GENDER:$6|$3}} z grupy $4 do $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|zmienił|zmieniła|zmienił(a)}} globalne uprawnienia {{GENDER:$6|$3}}: $7",
 	"action-userrights-global": "zarządzania globalnymi uprawnieniami użytkownika",
 	"right-userrights-global": "Zarządzanie globalnymi uprawnieniami użytkownika"
 }

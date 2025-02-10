@@ -11,7 +11,7 @@
 	"gur-rightslog-name": "Globales Rechte-Logbuch",
 	"gur-rightslog-header": "Dies ist ein Logbuch der Änderungen an globalen Benutzerrechten.",
 	"gur-rightslog-entry": "änderte die globale Gruppenmitgliedschaft für $1 von $2 auf $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|änderte}} die globale Gruppenmitgliedschaft für {{GENDER:$6|$3}} von $4 nach $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|änderte}} die globale Gruppenmitgliedschaft für {{GENDER:$6|$3}}: $7",
 	"action-userrights-global": "globale Benutzerrechte zu verwalten",
 	"right-userrights-global": "Globale Benutzerrechte verwalten"
 }
