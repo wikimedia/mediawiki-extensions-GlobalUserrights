@@ -10,6 +10,6 @@
 	"gur-rightslog-name": "Registro dei diritti globali",
 	"gur-rightslog-header": "Questo è un registro dei cambiamenti ai diritti globali.",
 	"gur-rightslog-entry": "ha modificato l'appartenenza ai gruppi globali di $1 da $2 a $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|ha modificato}} l'appartenenza di {{GENDER:$6|$3}} dal gruppo globale $4 al gruppo globale $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|ha modificato}} l'appartenenza al gruppo globale di {{GENDER:$6|$3}}: $7",
 	"right-userrights-global": "Gestisce i diritti utente globali"
 }

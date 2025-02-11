@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cabadeck",
 			"Ferrer",
 			"Okras"
 		]
@@ -10,6 +11,6 @@
 	"gur-rightslog-name": "Журнал глобальных прав",
 	"gur-rightslog-header": "Это журнал изменений глобальных прав.",
 	"gur-rightslog-entry": "изменил глобальное членство в группах для $1 с $2 на $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|изменил|изменила}} членство в глобальных группах для {{GENDER:$6|$3}} с $4 на $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|изменил|изменила}} членство в глобальных группах для {{GENDER:$6|$3}}: $7",
 	"right-userrights-global": "управление глобальными правами участников"
 }
