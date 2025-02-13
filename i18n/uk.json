@@ -14,7 +14,7 @@
 	"gur-rightslog-name": "Журнал глобальних прав",
 	"gur-rightslog-header": "Це журнал змін глобальних прав.",
 	"gur-rightslog-entry": "змінив глобальні права для $1 з $2 на $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|змінив|змінила}} членство в глобальних групах для {{GENDER:$6|$3}} із $4 на $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|змінив|змінила}} членство в глобальних групах для {{GENDER:$6|$3}}: $7",
 	"action-userrights-global": "керування глобальними правами користувача",
 	"right-userrights-global": "Керування глобальними правами користувача"
 }
