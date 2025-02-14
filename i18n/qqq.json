@@ -4,6 +4,7 @@
 			"Darth Kule",
 			"Fryed-peach",
 			"Mainframe98",
+			"McDutchie",
 			"Msz2001",
 			"Purodha",
 			"Shirayuki",
@@ -15,7 +16,7 @@
 	"gur-rightslog-name": "See also {{msg-mw|Gblrights-logpage}}",
 	"gur-rightslog-header": "See also {{msg-mw|Gblrights-pagetext}}",
 	"gur-rightslog-entry": "Identical to {{msg-mw|Gblrights-rights-entry}}.\n\nSimilar to {{msg-mw|Rightslogentry}}.\n\nParameters:\n* $1 - the username\n* $2 - list of user groups or empty string\n* $3 - list of user groups or empty string",
-	"logentry-gblrights-rights": "Similar to {{msg-mw|logentry-rights-rights}}.\n\nParameters:\n* $1 - (see below)\n* $2 - the username of the user changing the rights\n* $3 - the target username\n* $4 - previous list of user groups or empty string\n* $5 - new list of user groups or empty string\n* $6 - see $3\n* $7 - formatted changes to the user groups",
+	"logentry-gblrights-rights": "Similar to {{msg-mw|logentry-rights-rights}}.\n\nParameters:\n* $1 - (see below)\n* $2 - the username of the user changing the rights\n* $3 - the target username\n* $6 - see $3\n* $7 - formatted changes to the user groups",
 	"action-userrights-global": "{{doc-action|userrights-global}}\n\nSee also {{msg-mw|Right-userrights-shared}}",
 	"right-userrights-global": "{{doc-right|userrights-global}}\n\nSee also {{msg-mw|Right-userrights-shared}}"
 }
