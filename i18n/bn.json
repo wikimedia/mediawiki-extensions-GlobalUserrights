@@ -11,5 +11,6 @@
 	"gur-rightslog-name": "বৈশ্বিক অধিকার লগ",
 	"gur-rightslog-header": "এটি বৈশ্বিক অধিকার পরিবর্তনের লগ।",
 	"gur-rightslog-entry": "$1 এর জন্য $2 থেকে $3 এ বৈশ্বিক গ্রুপ সদস্যপদ পরিবর্তন করা হয়েছে",
+	"logentry-gblrights-rights": "$1 {{GENDER:$6|$3}}-এর বৈশ্বিক দলীয় সদস্যপদ {{GENDER:$2|পরিবর্তন}} করেছেন: $7",
 	"right-userrights-global": "বৈশ্বিক অধিকার ব্যবস্থাপনা"
 }
