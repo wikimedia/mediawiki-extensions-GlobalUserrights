@@ -3,6 +3,7 @@
 		"authors": [
 			"Gomoko",
 			"IAlex",
+			"JLTRY",
 			"Verdy p",
 			"Wladek92"
 		]
@@ -12,7 +13,7 @@
 	"gur-rightslog-name": "Historique des droits globaux",
 	"gur-rightslog-header": "Ceci est le journal des modifications de droits globaux",
 	"gur-rightslog-entry": "a modifié les droits globaux pour $1 de $2 à $3",
-	"logentry-gblrights-rights": "$1{{GENDER:$2|}} a modifié l’appartenance globale au groupe pour $3{{GENDER:$6|}} de $4 à $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2| a modifé}} l'adhésion au groupe global pour {{GENDER:$6| $3 }} : $7",
 	"action-userrights-global": "gérer les droits d’utilisateur globaux",
 	"right-userrights-global": "Gérer les droits utilisateurs globaux"
 }
