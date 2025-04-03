@@ -4,7 +4,8 @@
 			"Kwj2772",
 			"Nuevo Paso",
 			"밝은소년",
-			"아라"
+			"아라",
+			"Tensama0415"
 		]
 	},
 	"globaluserrights": "전역 계정 권한 관리",
@@ -13,5 +14,6 @@
 	"gur-rightslog-header": "전역 권한 바꾸기 기록입니다.",
 	"gur-rightslog-entry": "$1의 공통 권한을 $2에서 $3으로 바꿈",
 	"logentry-gblrights-rights": "$1 님이 {{GENDER:$6|$3}} 님의 통합 계정 권한을 $4에서 $5(으)로 {{GENDER:$2|바꾸었습니다}}",
+	"action-userrights-global": "전역 사용자 권한 관리",
 	"right-userrights-global": "전역 권한 관리하기"
 }
