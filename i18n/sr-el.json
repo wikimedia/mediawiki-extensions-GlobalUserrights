@@ -11,5 +11,6 @@
 	"gur-rightslog-name": "Dnevnik globalnih prava",
 	"gur-rightslog-header": "Ovo je istorija promena globalnih prava.",
 	"gur-rightslog-entry": "je promenio globalna prava za $1 iz $2 u $3",
+	"logentry-gblrights-rights": "$1 je {{GENDER:$2|promenio|promenila}} članstvo globalne grupe za {{GENDER:$6|$3}} $7",
 	"right-userrights-global": "Upravljanje globalnim pravima korisnika"
 }
