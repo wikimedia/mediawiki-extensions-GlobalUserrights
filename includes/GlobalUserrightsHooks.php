@@ -23,14 +23,20 @@ class GlobalUserrightsHooks {
 	 */
 	public static function getGroupMemberships( $user ) {
 		if ( $user instanceof UserIdentity ) {
-			if ( method_exists( MediaWikiServices::class, 'getCentralIdLookupFactory' ) ) {
-				// MW1.37+
-				$uidLookup = MediaWikiServices::getInstance()->getCentralIdLookupFactory()->getLookup();
-			} else {
-				$uidLookup = CentralIdLookup::factory();
-			}
+			if ( $user->isRegistered() ) {
+				if ( method_exists( MediaWikiServices::class, 'getCentralIdLookupFactory' ) ) {
+					// MW1.37+
+					$uidLookup = MediaWikiServices::getInstance()->getCentralIdLookupFactory()->getLookup();
+				} else {
+					$uidLookup = CentralIdLookup::factory();
+				}
 
-			$uid = $uidLookup->centralIdFromLocalUser( $user );
+				$uid = $uidLookup->centralIdFromLocalUser( $user );
+			} else {
+				// Anonymous users cannot have any user group.
+				// Calling central ID lookup for them may run into infinite loops (T395176).
+				return [];
+			}
 		} else {
 			// if $user isn't an instance of user, assume it's the uid
 			$uid = $user;
