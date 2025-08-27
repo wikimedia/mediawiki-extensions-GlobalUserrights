@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saurmandal"
+		]
+	},
+	"globaluserrights": "ग्लोबल सदस्य अधिकार प्रबंधन",
+	"gur-desc": "[[Special:GlobalUserRights|ग्लोबल सदस्य अधिकारों]] का आसान प्रबंधन",
+	"gur-rightslog-name": "ग्लोबल अधिकार लॉग",
+	"gur-rightslog-header": "यह ग्लोबल अधिकारों में बदलावों का लॉग है।",
+	"gur-rightslog-entry": "$1 के लिए समूहों की सदस्यता $2 से $3 में बदली",
+	"logentry-gblrights-rights": "$1 ने {{GENDER:$6|$3}} के लिए समूहों की सदस्यता {{GENDER:$2|बदली}}: $7",
+	"action-userrights-global": "ग्लोबल सदस्य अधिकार प्रबंधित करने",
+	"right-userrights-global": "ग्लोबल सदस्य अधिकार प्रबंधित करना"
+}
