@@ -13,7 +13,7 @@
 	"gur-rightslog-name": "Jurnal drepturi globale",
 	"gur-rightslog-header": "Acest jurnal cuprinde modificările drepturilor globale.",
 	"gur-rightslog-entry": "a schimbat pentru $1 apartenența la grupul global de la $2 la $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|a schimbat}} apartenența la grup global pentru {{GENDER:$6|$3}} de la $4 la $5",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|a schimbat}} apartenența la grupuri globale pentru {{GENDER:$6|$3}}: $7",
 	"action-userrights-global": "administrarea drepturilor globale de utilizator",
 	"right-userrights-global": "Administrează drepturile globale ale utilizatorilor"
 }
