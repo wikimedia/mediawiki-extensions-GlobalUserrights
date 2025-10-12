@@ -1,7 +1,9 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\User\UserFactory;
+use MediaWiki\User\UserGroupsSpecialPageTarget;
 use MediaWiki\User\UserIdentity;
 
 /**
@@ -211,11 +213,8 @@ class GlobalUserrights extends UserrightsPage {
 
 	/**
 	 * Show a rights log fragment for the specified user
-	 *
-	 * @param UserIdentity $user
-	 * @param OutputPage $output
 	 */
-	protected function showLogFragment( $user, $output ) {
+	protected function showLogFragment( UserGroupsSpecialPageTarget $target, OutputPage $output ): void {
 		$log = new LogPage( 'gblrights' );
 		$output->addHTML( Xml::element( 'h2', null, $log->getName()->text() ) );
 		LogEventsList::showLogExtract( $output, 'gblrights', Title::makeTitle( NS_USER, $user->getName() ) );
