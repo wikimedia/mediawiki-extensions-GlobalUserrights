@@ -2,6 +2,7 @@
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentity;
 
