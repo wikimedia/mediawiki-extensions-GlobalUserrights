@@ -13,7 +13,7 @@
 	"gur-rightslog-name": "Küresel hakları günlüğü",
 	"gur-rightslog-header": "Bu küresel haklardaki değişikliklerin günlüğüdür.",
 	"gur-rightslog-entry": "$1 adlı kullanıcının küresel grup üyeliği $2 iken $3 olarak değiştirildi",
-	"logentry-gblrights-rights": "$1, {{GENDER:$6|$3}} için küresel küme üyeliğini $4 iken $5 olarak {{GENDER:$2|değiştirdi}}",
+	"logentry-gblrights-rights": "$1, {{GENDER:$6|$3}} için küresel küme üyeliğini {{GENDER:$2|değiştirdi}}: $7",
 	"action-userrights-global": "küresel kullanıcı haklarını yönet",
 	"right-userrights-global": "Küresel kullanıcı haklarını yönet"
 }
