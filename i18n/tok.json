@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ookap"
+		]
+	},
+	"globaluserrights": "o lawa e wawa jan pi kulupu lipu ale",
+	"gur-desc": "ilo la sina ken lawa e [[Special:GlobalUserRights|wawa jan pi kulupu lipu ale]] kepeken pali lili",
+	"gur-rightslog-name": "pini pi wawa jan pi kulupu lipu ale",
+	"gur-rightslog-header": "lipu ni li toki e tenpo pini ale ni: wawa jan pi kulupu lipu ale li ante.",
+	"gur-rightslog-entry": "li ante e kulupu pi jan $1 tan $2 tawa $3 lon kulupu lipu ale",
+	"logentry-gblrights-rights": "$1 li {{GENDER:$2|ante}} e kulupu pi jan {{GENDER:$6|$3}} lon kulupu lipu ale: $7",
+	"action-userrights-global": "lawa e wawa jan pi kulupu lipu ale",
+	"right-userrights-global": "ona li ken lawa e wawa jan pi kulupu lipu ale"
+}
