@@ -10,7 +10,7 @@
 	"descriptionmsg": "gur-desc",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.39.4"
+		"MediaWiki": ">= 1.40"
 	},
 	"SpecialPages": {
 		"GlobalUserrights": "GlobalUserrights"
