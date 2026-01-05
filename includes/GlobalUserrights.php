@@ -1,10 +1,17 @@
 <?php
 
+use MediaWiki\Language\FormatterFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Title\Title;
+use MediaWiki\User\MultiFormatUserIdentityLookup;
 use MediaWiki\User\UserFactory;
+use MediaWiki\User\UserGroupAssignmentService;
+use MediaWiki\User\UserGroupManagerFactory;
 use MediaWiki\User\UserIdentity;
+use MediaWiki\User\UserNamePrefixSearch;
+use MediaWiki\User\UserNameUtils;
+use MediaWiki\Watchlist\WatchlistManager;
 
 /**
  * Special:GlobalUserrights, Special:UserRights for global groups
@@ -19,8 +26,26 @@ use MediaWiki\User\UserIdentity;
 
 class GlobalUserrights extends UserrightsPage {
 
-	public function __construct() {
-		parent::__construct();
+	public function __construct(
+		UserGroupManagerFactory $userGroupManagerFactory,
+		UserNameUtils $userNameUtils,
+		UserNamePrefixSearch $userNamePrefixSearch,
+		UserFactory $userFactory,
+		WatchlistManager $watchlistManager,
+		UserGroupAssignmentService $userGroupAssignmentService,
+		MultiFormatUserIdentityLookup $multiFormatUserIdentityLookup,
+		FormatterFactory $formatterFactory,
+	) {
+		parent::__construct(
+			$userGroupManagerFactory,
+			$userNameUtils,
+			$userNamePrefixSearch,
+			$userFactory,
+			$watchlistManager,
+			$userGroupAssignmentService,
+			$multiFormatUserIdentityLookup,
+			$formatterFactory
+		);
 		$this->mName = 'GlobalUserrights';
 	}
 
