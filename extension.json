@@ -13,7 +13,19 @@
 		"MediaWiki": ">= 1.40"
 	},
 	"SpecialPages": {
-		"GlobalUserrights": "GlobalUserrights"
+		"GlobalUserrights": {
+			"class": "GlobalUserrights",
+			"services": [
+				"UserGroupManagerFactory",
+				"UserNameUtils",
+				"UserNamePrefixSearch",
+				"UserFactory",
+				"WatchlistManager",
+				"UserGroupAssignmentService",
+				"MultiFormatUserIdentityLookup",
+				"FormatterFactory"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"GlobalUserrights": [
