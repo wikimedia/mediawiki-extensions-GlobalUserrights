@@ -13,7 +13,7 @@
 	"gur-rightslog-name": "Järjestelmänlaajuinen käyttöoikeusloki",
 	"gur-rightslog-header": "Tämä on loki käyttäjien järjestelmänlaajuisten käyttöoikeuksien muutoksista.",
 	"gur-rightslog-entry": "muutti käyttäjän $1 järjestelmänlaajuisia oikeuksia ryhmistä $2 ryhmiin $3",
-	"logentry-gblrights-rights": "$1 {{GENDER:$2|muutti}} käyttäjän {{GENDER:$6|$3}} järjestelmänlaajuiset oikeudet: $7",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|muutti}} käyttäjän {{GENDER:$6|$3}} järjestelmänlaajuisia oikeuksia: $7",
 	"action-userrights-global": "hallinnoida järjestelmänlaajuisia käyttöoikeuksia",
 	"right-userrights-global": "Hallinnoida järjestelmänlaajuisia käyttöoikeuksia"
 }
