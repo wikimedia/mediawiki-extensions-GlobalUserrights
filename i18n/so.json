@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"globaluserrights": "Maareynta xuquuqda isticmaalayaasha ee caalamiga ah",
+	"gur-desc": "Maamulka fudud ee [[Special:GlobalUserRights|xuquuqda isticmaalayaasha caalamiga ah]]",
+	"gur-rightslog-name": "Diiwaanka xuquuqda caalamiga ah",
+	"gur-rightslog-header": "Tani waa diiwaanka isbeddellada xuquuqda caalamiga ah.",
+	"gur-rightslog-entry": "Beddelay xubinimada kooxda caalamiga ah ee $1 laga beddelay $2 loona beddelay $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|wuxuu beddelay}} xubinimada kooxda caalamiga ah ee {{GENDER:$6|$3}}: $7",
+	"action-userrights-global": "Maamul xuquuqda isticmaalayaasha caalamiga ah",
+	"right-userrights-global": "Maamul xuquuqda isticmaalayaasha caalamiga ah"
+}
