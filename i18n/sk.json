@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Helix84",
-			"Vlad5250"
+			"Vlad5250",
+			"Wizzard"
 		]
 	},
 	"globaluserrights": "Správa oprávnení globálnych používateľov",
@@ -10,6 +11,7 @@
 	"gur-rightslog-name": "Záznam globálnych oprávnení",
 	"gur-rightslog-header": "Toto je záznam zmien globálnych oprávnení.",
 	"gur-rightslog-entry": "zmenené členstvo $1 v globálnej skupine z $2 na $3",
+	"logentry-gblrights-rights": "$1 {{GENDER:$2|zmenil|zmenila|zmenilo}} členstvo v globálnych skupinách pre {{GENDER:$6|$3}}: $7",
 	"action-userrights-global": "spravovať oprávnenia globálnych používateľov",
 	"right-userrights-global": "Spravovať oprávnenia globálnych používateľov"
 }
