@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
-	"gur-rightslog-entry": "د $1 لپاره د غړيتوب نړېواله ډله له $2 څخه $3 ته بدله شوه."
+	"globaluserrights": "د ټوليزو کارن رښتو چاروالي",
+	"gur-desc": "د [[Special:GlobalUserRights|ټوليزو کارن رښتو]] اسانه پازوالي",
+	"gur-rightslog-name": "د ټوليزو رښتو يادښت",
+	"gur-rightslog-header": "دا د ټوليزو کارن رښتو د بدلونونو يو يادښت دی.",
+	"gur-rightslog-entry": "له $2 څخه $3 ته د $1 ټوليزې ډلې غړيتوب بدل شو",
+	"logentry-gblrights-rights": "$1 د {{GENDER:$6|$3}} لپاره د ټوليزې ډلې غړيتوب {{GENDER:$2|بدل کړ}}: $7",
+	"action-userrights-global": "د ټوليزو کارن رښتو مهارول",
+	"right-userrights-global": "د ټوليزو کارن رښتو مهارول"
 }
